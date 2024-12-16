@@ -50,7 +50,7 @@
         </div>
 
         <!-- Header Section -->
-        <header class="fixed top-0 left-0 z-40 transition-all duration-300 bg-none text-white py-3 px-5 lg:px-5 w-full">
+        <header class="fixed top-0 left-0 z-40 transition-all duration-300 bg-none text-white py-3 px-5 lg:pe-20 w-full">
             <div class="header_container transition-all duration-300 flex justify-between py-3 w-full">
                 <!-- Logo -->
                 <div class="text-3xl poppins-regular"><a href="index.html"><img src="assets/img/aiims-new-logo.png"
@@ -65,11 +65,11 @@
                 <nav id="menu" class="hidden lg:flex gap-8 mt-3">
                     <a href="index.html"
                         class="hover:text-[#f59b40] font-semibold text-[#f5ae40] text-lg poppins-regular">Home</a>
-                    <a href="about.html" class="hover:text-gray-300 text-lg poppins-regular">About</a>
-                    <a href="service.html" class="hover:text-gray-300 text-lg poppins-regular">Services</a>
-                    <a href="interior_design.html" class="hover:text-gray-300 text-lg poppins-regular">Smart Interiors</a>
-                    <a href="#technology-section" class="hover:text-gray-300 text-lg poppins-regular">Technology</a>
-                    <a href="contact.html" class="hover:text-gray-300 text-lg poppins-regular">Contact</a>
+                    <a href="about.html" class="hover:text-[#f5ae40] transition-all duration-300 text-lg poppins-regular">About</a>
+                    <a href="service.html" class="hover:text-[#f5ae40] transition-all duration-300 text-lg poppins-regular">Services</a>
+                    <a href="interior_design.html" class="hover:text-[#f5ae40] transition-all duration-300 text-lg poppins-regular">Smart Interiors</a>
+                    <a href="#technology-section" class="hover:text-[#f5ae40] transition-all duration-300 text-lg poppins-regular">Technology</a>
+                    <a href="contact.html" class="hover:text-[#f5ae40] transition-all duration-300 text-lg poppins-regular">Contact</a>
                 </nav>
             </div>
 
@@ -84,21 +84,28 @@
                         <li><a href="index.html"
                                 class="block hover:text-[#f59b40] font-semibold text-[#f5ae40] text-lg poppins-regular">Home</a>
                         </li>
-                        <li><a href="about.html" class="block hover:text-gray-300 text-lg poppins-regular">About</a>
+                        <li><a href="about.html" class="block hover:text-[#f5ae40] transition-all duration-300 text-lg poppins-regular">About</a>
                         </li>
                         <li><a href="service.html"
-                                class="block hover:text-gray-300 text-lg poppins-regular">Services</a>
+                                class="block hover:text-[#f5ae40] transition-all duration-300 text-lg poppins-regular">Services</a>
                         </li>
-                        <li><a href="interior_design.html" class="hover:text-gray-300 text-lg poppins-regular">Smart Interiors</a>
+                        <li><a href="interior_design.html" class="hover:text-[#f5ae40] transition-all duration-300 text-lg poppins-regular">Smart Interiors</a>
                         </li>
                         <li><a href="#technology-section"
-                                class="block hover:text-gray-300 text-lg poppins-regular">Portfolio</a></li>
-                        <li><a href="contact.html" class="block hover:text-gray-300 text-lg poppins-regular">Contact</a>
+                                class="block hover:text-[#f5ae40] transition-all duration-300 text-lg poppins-regular">Technology</a></li>
+                        <li><a href="contact.html" class="block hover:text-[#f5ae40] transition-all duration-300 text-lg poppins-regular">Contact</a>
                         </li>
                     </ul>
-                    <a href="https://www.linkedin.com" target="_blank"
-                        class="inline-block hover:text-gray-300 absolute bottom-5"><i
-                            class="ri-linkedin-box-fill text-4xl"></i></a>
+                    <div class="absolute bottom-5 flex gap-5 w-full">
+                        <a href="https://www.linkedin.com/company/application-integration-and-intelligent-monitoring-system/?viewAsMember=true" target="_blank"
+                            class="inline-block hover:text-gray-300"><i
+                                class="ri-linkedin-box-fill text-4xl"></i>
+                        </a>
+                        <a href="https://wa.me/8505889198?text=Hello, I would like to inquire about..." target="_blank"
+                            class="inline-block hover:text-gray-300"><i
+                                class="ri-whatsapp-line text-4xl"></i>
+                        </a>
+                    </div>
                 </nav>
                 <span class="inline-block h-full w-2/5" id="close_menu"></span>
             </div>
@@ -121,16 +128,11 @@
                 </h1>
                 <p class="text-center text-white text-lg mt-5 poppins-regular">We help great companies simplify business
                     by providing path-breaking solutions</p>
-                <button><a href="service.html"
-                        class="mt-5 px-12 py-3 font-semibold border-white border-2 text-white inline-block hover:bg-white hover:text-black transition-all duration-300 poppins-regular">Get
+                <button class="mt-3 md:mt-5"><a href="service.html"
+                        class="mt-5 px-12 py-3 font-semibold border-[#f5ae40] bg-[#f5ae40] hover:bg-transparent border-2 text-white inline-block  transition-all duration-300 poppins-regular">Get
                         Start</a></button>
             </div>
-            <!-- External Links -->
-            <div class="absolute z-10 bottom-5 left-6 lg:left-10 flex gap-5">
-                <a href="https://www.linkedin.com" target="_blank" class="hover:text-gray-300"><i
-                        class="ri-linkedin-box-fill text-white text-4xl"></i>
-                </a>
-            </div>
+
         </section>
 
         <!-- about section -->
@@ -179,63 +181,63 @@
 
                 <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3" data-aos="fade-up">
                     <!-- Service Cards -->
-                    <div class="group relative bg-white rounded-lg shadow-lg p-6 hover:scale-105 transition-all duration-300 service-card cursor-pointer"
+                    <div class="group relative bg-white hover:bg-[#f5ae40] rounded-lg shadow-lg p-6 hover:scale-105 transition-all duration-300 service-card cursor-pointer"
                         data-service="Software Development"
                         data-description="Build custom software solutions tailored to your unique business needs."
                         data-long-description="Our software development services include end-to-end solutions, from requirement analysis to deployment and maintenance. We use cutting-edge technologies to create scalable and secure applications that align with your business objectives. Our expertise spans across web applications, enterprise systems, and custom software solutions tailored to your specific needs."
                         data-link="software-development.html">
 
                         <div
-                            class="absolute -top-4 -left-4 bg-[#f5ae40] text-white rounded-full w-12 h-12 flex items-center justify-center group-hover:bg-[#f59b40]">
-                            <i class="ri-code-line text-2xl"></i>
+                            class="absolute -top-4 -left-4 bg-[#f5ae40] transition-all duration-300 text-white rounded-full w-12 h-12 flex items-center justify-center group-hover:bg-white">
+                            <i class="ri-code-line text-2xl group-hover:text-[#f5ae40] transition-all duration-300"></i>
                         </div>
-                        <h3 class="text-xl font-bold poppins-regular text-gray-800 mt-5">Software Development</h3>
-                        <p class="text-gray-600 mt-2 poppins-regular">
+                        <h3 class="text-xl font-bold poppins-regular text-gray-800 mt-5 group-hover:text-white transition-all duration-300">Software Development</h3>
+                        <p class="text-gray-600 mt-2 poppins-regular group-hover:text-white transition-all duration-300">
                             Build custom software solutions tailored to your unique business needs.
                         </p>
                     </div>
 
-                    <div class="group relative bg-white rounded-lg shadow-lg p-6 hover:scale-105 transition-all duration-300 service-card cursor-pointer"
+                    <div class="group relative bg-white hover:bg-[#f5ae40] rounded-lg shadow-lg p-6 hover:scale-105 transition-all duration-300 service-card cursor-pointer"
                         data-service="Cloud Solutions"
                         data-description="Modernize your operations with scalable and secure cloud services."
                         data-long-description="Our cloud solutions enable businesses to embrace the future with confidence. From cloud migration to ongoing management, we offer a range of services that ensure flexibility, security, and cost-efficiency. Experience the power of cloud computing with our tailored strategies and robust infrastructure."
                         data-link="cloud_solution.html">
                         <div
-                            class="absolute -top-4 -left-4 bg-[#f5ae40] text-white rounded-full w-12 h-12 flex items-center justify-center group-hover:bg-[#f59b40]">
-                            <i class="ri-cloud-line text-2xl"></i>
+                            class="absolute -top-4 -left-4 bg-[#f5ae40] transition-all duration-300 text-white rounded-full w-12 h-12 flex items-center justify-center group-hover:bg-white">
+                            <i class="ri-cloud-line text-2xl group-hover:text-[#f5ae40] transition-all duration-300"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-800 mt-5 poppins-regular">Cloud Solutions</h3>
-                        <p class="text-gray-600 mt-2 poppins-regular">
+                        <h3 class="text-xl font-bold poppins-regular text-gray-800 mt-5 group-hover:text-white transition-all duration-300">Cloud Solutions</h3>
+                        <p class="text-gray-600 mt-2 poppins-regular group-hover:text-white transition-all duration-300">
                             Modernize your operations with scalable and secure cloud services.
                         </p>
                     </div>
 
-                    <div class="group relative bg-white rounded-lg shadow-lg p-6 hover:scale-105 transition-all duration-300 service-card cursor-pointer"
+                    <div class="group relative bg-white hover:bg-[#f5ae40] rounded-lg shadow-lg p-6 hover:scale-105 transition-all duration-300 service-card cursor-pointer"
                         data-service="IT Consulting"
                         data-description="Gain strategic insights and expert advice to elevate your IT infrastructure."
                         data-long-description="Our IT consulting services are designed to help businesses navigate the complexities of the technology landscape. From strategy formulation to implementation, we provide actionable insights and hands-on support to transform your IT infrastructure into a powerful business enabler."
                         data-link="it_consulting.html">
                         <div
-                            class="absolute -top-4 -left-4 bg-[#f5ae40] text-white rounded-full w-12 h-12 flex items-center justify-center group-hover:bg-[#f59b40]">
-                            <i class="ri-stack-line text-2xl"></i>
+                            class="absolute -top-4 -left-4 bg-[#f5ae40] transition-all duration-300 text-white rounded-full w-12 h-12 flex items-center justify-center group-hover:bg-white">
+                            <i class="ri-stack-line text-2xl group-hover:text-[#f5ae40] transition-all duration-300"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-800 mt-5 poppins-regular">IT Consulting</h3>
-                        <p class="text-gray-600 mt-2 poppins-regular">
+                        <h3 class="text-xl font-bold poppins-regular text-gray-800 mt-5 group-hover:text-white transition-all duration-300">IT Consulting</h3>
+                        <p class="text-gray-600 mt-2 poppins-regular group-hover:text-white transition-all duration-300">
                             Gain strategic insights and expert advice to elevate your IT infrastructure.
                         </p>
                     </div>
 
-                    <div class="group relative bg-white rounded-lg shadow-lg p-6 hover:scale-105 transition-all duration-300 service-card cursor-pointer"
+                    <div class="group relative bg-white hover:bg-[#f5ae40] rounded-lg shadow-lg p-6 hover:scale-105 transition-all duration-300 service-card cursor-pointer"
                         data-service="Mobile App Development"
                         data-description="Design and develop intuitive mobile applications for iOS and Android."
                         data-long-description="We specialize in crafting user-friendly and feature-rich mobile applications. Our team ensures seamless integration, cross-platform compatibility, and engaging interfaces to deliver apps that resonate with your audience and achieve your business goals."
                         data-link="mobile_development.html">
                         <div
-                            class="absolute -top-4 -left-4 bg-[#f5ae40] text-white rounded-full w-12 h-12 flex items-center justify-center group-hover:bg-[#f59b40]">
-                            <i class="ri-smartphone-line text-2xl"></i>
+                            class="absolute -top-4 -left-4 bg-[#f5ae40] transition-all duration-300 text-white rounded-full w-12 h-12 flex items-center justify-center group-hover:bg-white">
+                            <i class="ri-smartphone-line text-2xl group-hover:text-[#f5ae40] transition-all duration-300"></i>
                         </div>
-                        <h3 class="text-xl font-bold text-gray-800 mt-5 poppins-regular">Mobile App Development</h3>
-                        <p class="text-gray-600 mt-2 poppins-regular">
+                        <h3 class="text-xl font-bold poppins-regular text-gray-800 mt-5 group-hover:text-white transition-all duration-300">Mobile App Development</h3>
+                        <p class="text-gray-600 mt-2 poppins-regular group-hover:text-white transition-all duration-300">
                             Design and develop intuitive mobile applications for iOS and Android.
                         </p>
                     </div>
@@ -268,7 +270,7 @@
                 </div>
             </div>
         </div>
-          
+
         <!-- counter section -->
         <section id="counter-section" class="bg-gray-800 text-white py-16 overflow-hidden">
             <div class="container mx-auto px-6 lg:px-20">
@@ -334,100 +336,100 @@
                 <!-- Technologies Grid -->
                 <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" data-aos="fade-up">
                     <!-- Technology Card 1 -->
-                    <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg hover:scale-105 transition">
-                        <div class="flex justify-center mb-4 text-indigo-600">
+                    <div class="group p-6 bg-white hover:bg-[#f5ae40] rounded-lg shadow hover:shadow-lg hover:scale-105 transition">
+                        <div class="flex justify-center mb-4 text-indigo-600 group-hover:text-white transition-all duration-200">
                             <i class="ri-reactjs-line text-6xl"></i>
                         </div>
-                        <h3 class="text-lg font-bold text-gray-800 text-center">React.js</h3>
-                        <p class="text-gray-600 text-center mt-2">
+                        <h3 class="text-lg font-bold text-gray-800 text-center group-hover:text-white transition-all duration-200">React.js</h3>
+                        <p class="text-gray-600 text-center mt-2 group-hover:text-white transition-all duration-200">
                             Build dynamic and responsive web interfaces with our React expertise.
                         </p>
                     </div>
 
                     <!-- Technology Card 2 -->
-                    <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg hover:scale-105 transition">
-                        <div class="flex justify-center mb-4 text-blue-600">
+                    <div class="group p-6 bg-white hover:bg-[#f5ae40] rounded-lg shadow hover:shadow-lg hover:scale-105 transition">
+                        <div class="flex justify-center mb-4 text-blue-600 group-hover:text-white transition-all duration-200">
                             <i class="ri-node-tree text-6xl"></i>
                         </div>
-                        <h3 class="text-lg font-bold text-gray-800 text-center">Node.js</h3>
-                        <p class="text-gray-600 text-center mt-2">
+                        <h3 class="text-lg font-bold text-gray-800 text-center group-hover:text-white transition-all duration-200">Node.js</h3>
+                        <p class="text-gray-600 text-center mt-2 group-hover:text-white transition-all duration-200">
                             Develop scalable and efficient backend systems using Node.js.
                         </p>
                     </div>
 
                     <!-- Technology Card 3 -->
-                    <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg hover:scale-105 transition">
-                        <div class="flex justify-center mb-4 text-yellow-500">
+                    <div class="group p-6 bg-white hover:bg-[#f5ae40] rounded-lg shadow hover:shadow-lg hover:scale-105 transition">
+                        <div class="flex justify-center mb-4 text-yellow-500 group-hover:text-white transition-all duration-200">
                             <i class="ri-server-line text-6xl"></i>
                         </div>
-                        <h3 class="text-lg font-bold text-gray-800 text-center">AWS</h3>
-                        <p class="text-gray-600 text-center mt-2">
+                        <h3 class="text-lg font-bold text-gray-800 text-center group-hover:text-white transition-all duration-200">AWS</h3>
+                        <p class="text-gray-600 text-center mt-2 group-hover:text-white transition-all duration-200">
                             Harness the power of cloud computing with our AWS solutions.
                         </p>
                     </div>
 
                     <!-- Technology Card 4 -->
-                    <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg hover:scale-105 transition">
-                        <div class="flex justify-center mb-4 text-green-500">
+                    <div class="group p-6 bg-white hover:bg-[#f5ae40] rounded-lg shadow hover:shadow-lg hover:scale-105 transition">
+                        <div class="flex justify-center mb-4 text-green-500 group-hover:text-white transition-all duration-200">
                             <i class="ri-database-2-line text-6xl"></i>
                         </div>
-                        <h3 class="text-lg font-bold text-gray-800 text-center">MongoDB</h3>
-                        <p class="text-gray-600 text-center mt-2">
+                        <h3 class="text-lg font-bold text-gray-800 text-center group-hover:text-white transition-all duration-200">MongoDB</h3>
+                        <p class="text-gray-600 text-center mt-2 group-hover:text-white transition-all duration-200">
                             Manage data effectively with our MongoDB expertise.
                         </p>
                     </div>
 
                     <!-- Technology Card 5 -->
-                    <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg hover:scale-105 transition">
-                        <div class="flex justify-center mb-4 text-blue-700">
+                    <div class="group p-6 bg-white hover:bg-[#f5ae40] rounded-lg shadow hover:shadow-lg hover:scale-105 transition">
+                        <div class="flex justify-center mb-4 text-blue-700 group-hover:text-white transition-all duration-200">
                             <i class="ri-html5-line text-6xl"></i>
                         </div>
-                        <h3 class="text-lg font-bold text-gray-800 text-center">HTML5</h3>
-                        <p class="text-gray-600 text-center mt-2">
+                        <h3 class="text-lg font-bold text-gray-800 text-center group-hover:text-white transition-all duration-200">HTML5</h3>
+                        <p class="text-gray-600 text-center mt-2 group-hover:text-white transition-all duration-200">
                             Craft modern and standards-compliant web experiences.
                         </p>
                     </div>
 
                     <!-- Technology Card 6 -->
-                    <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg hover:scale-105 transition">
-                        <div class="flex justify-center mb-4 text-cyan-500">
+                    <div class="group p-6 bg-white hover:bg-[#f5ae40] rounded-lg shadow hover:shadow-lg hover:scale-105 transition">
+                        <div class="flex justify-center mb-4 text-cyan-500 group-hover:text-white transition-all duration-200">
                             <i class="ri-css3-line text-6xl"></i>
                         </div>
-                        <h3 class="text-lg font-bold text-gray-800 text-center">CSS3</h3>
-                        <p class="text-gray-600 text-center mt-2">
+                        <h3 class="text-lg font-bold text-gray-800 text-center group-hover:text-white transition-all duration-200">CSS3</h3>
+                        <p class="text-gray-600 text-center mt-2 group-hover:text-white transition-all duration-200">
                             Design visually stunning and responsive interfaces.
                         </p>
                     </div>
 
                     <!-- Technology Card 7 - PHP -->
-                    <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg hover:scale-105 transition">
-                        <div class="flex justify-center mb-4 text-red-600">
+                    <div class="group p-6 bg-white hover:bg-[#f5ae40] rounded-lg shadow hover:shadow-lg hover:scale-105 transition">
+                        <div class="flex justify-center mb-4 text-red-600 group-hover:text-white transition-all duration-200">
                             <i class="ri-php-line text-6xl"></i>
                         </div>
-                        <h3 class="text-lg font-bold text-gray-800 text-center">PHP</h3>
-                        <p class="text-gray-600 text-center mt-2">
+                        <h3 class="text-lg font-bold text-gray-800 text-center group-hover:text-white transition-all duration-200 group-hover:text-white transition-all duration-200">PHP</h3>
+                        <p class="text-gray-600 text-center mt-2 group-hover:text-white transition-all duration-200">
                             Build dynamic and robust web applications using PHP.
                         </p>
                     </div>
 
                     <!-- Technology Card 8 - iOS -->
-                    <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg hover:scale-105 transition">
-                        <div class="flex justify-center mb-4 text-purple-600">
+                    <div class="group p-6 bg-white hover:bg-[#f5ae40] rounded-lg shadow hover:shadow-lg hover:scale-105 transition">
+                        <div class="flex justify-center mb-4 text-purple-600 group-hover:text-white transition-all duration-200">
                             <i class="ri-apple-line text-6xl"></i>
                         </div>
-                        <h3 class="text-lg font-bold text-gray-800 text-center">iOS</h3>
-                        <p class="text-gray-600 text-center mt-2">
+                        <h3 class="text-lg font-bold text-gray-800 text-center group-hover:text-white transition-all duration-200">iOS</h3>
+                        <p class="text-gray-600 text-center mt-2 group-hover:text-white transition-all duration-200">
                             Develop seamless and native mobile applications for iOS devices.
                         </p>
                     </div>
 
                     <!-- Technology Card 9 - Laravel -->
-                    <div class="p-6 bg-white rounded-lg shadow hover:shadow-lg hover:scale-105 transition">
-                        <div class="flex justify-center mb-4 text-blue-500">
+                    <div class="group p-6 bg-white hover:bg-[#f5ae40] rounded-lg shadow hover:shadow-lg hover:scale-105 transition">
+                        <div class="flex justify-center mb-4 text-blue-500 group-hover:text-white transition-all duration-200">
                             <text-6xl class="fab fa-laravel text-6xl"></i>
                         </div>
-                        <h3 class="text-lg font-bold text-gray-800 text-center">Laravel</h3>
-                        <p class="text-gray-600 text-center mt-2">
+                        <h3 class="text-lg font-bold text-gray-800 text-center group-hover:text-white transition-all duration-200">Laravel</h3>
+                        <p class="text-gray-600 text-center mt-2 group-hover:text-white transition-all duration-200">
                             Build elegant and robust web applications with the Laravel framework.
                         </p>
                     </div>
@@ -459,90 +461,90 @@
                 <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3" data-aos="fade-up">
                     <!-- Feature 1 -->
                     <div
-                        class="group bg-white p-8 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+                        class="group bg-white hover:bg-[#f5ae40] p-8 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
                         <div
-                            class="flex items-center justify-center bg-[#f5ae40] text-white w-16 h-16 rounded-full mx-auto group-hover:bg-[#f59b40]">
-                            <i class="ri-lightbulb-line text-3xl"></i>
+                            class="flex items-center justify-center bg-[#f5ae40] text-white w-16 h-16 rounded-full mx-auto group-hover:bg-white transition-all duration-300">
+                            <i class="ri-lightbulb-line text-3xl group-hover:text-[#f5ae40] transition-all duration-300"></i>
                         </div>
-                        <h3 class="text-xl font-semibold text-gray-800 mt-6 poppins-regular">
+                        <h3 class="text-xl font-semibold text-gray-800 mt-6 poppins-regular group-hover:text-white transition-all duration-300">
                             Innovative Solutions
                         </h3>
-                        <p class="text-gray-600 mt-3 poppins-regular">
+                        <p class="text-gray-600 mt-3 poppins-regular group-hover:text-white transition-all duration-300">
                             Cutting-edge technology tailored to meet unique challenges.
                         </p>
                     </div>
 
                     <!-- Feature 2 -->
                     <div
-                        class="group bg-white p-8 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+                        class="group bg-white hover:bg-[#f5ae40] p-8 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
                         <div
-                            class="flex items-center justify-center bg-[#f5ae40] text-white w-16 h-16 rounded-full mx-auto group-hover:bg-[#f59b40]">
-                            <i class="ri-shield-star-line text-3xl"></i>
+                            class="flex items-center justify-center bg-[#f5ae40] text-white w-16 h-16 rounded-full mx-auto group-hover:bg-white transition-all duration-300">
+                            <i class="ri-shield-star-line text-3xl group-hover:text-[#f5ae40] transition-all duration-300"></i>
                         </div>
-                        <h3 class="text-xl font-semibold text-gray-800 mt-6 poppins-regular">
+                        <h3 class="text-xl font-semibold text-gray-800 mt-6 poppins-regular group-hover:text-white transition-all duration-300">
                             Trusted Expertise
                         </h3>
-                        <p class="text-gray-600 mt-3 poppins-regular">
+                        <p class="text-gray-600 mt-3 poppins-regular group-hover:text-white transition-all duration-300">
                             Over 10+ years of delivering excellence across industries.
                         </p>
                     </div>
 
                     <!-- Feature 3 -->
                     <div
-                        class="group bg-white p-8 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+                        class="group bg-white hover:bg-[#f5ae40] p-8 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
                         <div
-                            class="flex items-center justify-center bg-[#f5ae40] text-white w-16 h-16 rounded-full mx-auto group-hover:bg-[#f59b40]">
-                            <i class="ri-customer-service-2-line text-3xl"></i>
+                            class="flex items-center justify-center bg-[#f5ae40] text-white w-16 h-16 rounded-full mx-auto group-hover:bg-white transition-all duration-300">
+                            <i class="ri-customer-service-2-line text-3xl group-hover:text-[#f5ae40] transition-all duration-300"></i>
                         </div>
-                        <h3 class="text-xl font-semibold text-gray-800 mt-6 poppins-regular">
+                        <h3 class="text-xl font-semibold text-gray-800 mt-6 poppins-regular group-hover:text-white transition-all duration-300">
                             Reliable Support
                         </h3>
-                        <p class="text-gray-600 mt-3 poppins-regular">
+                        <p class="text-gray-600 mt-3 poppins-regular group-hover:text-white transition-all duration-300">
                             24/7 customer support ensuring seamless operations.
                         </p>
                     </div>
 
                     <!-- Feature 4 -->
                     <div
-                        class="group bg-white p-8 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+                        class="group bg-white hover:bg-[#f5ae40] p-8 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
                         <div
-                            class="flex items-center justify-center bg-[#f5ae40] text-white w-16 h-16 rounded-full mx-auto group-hover:bg-[#f59b40]">
-                            <i class="ri-bar-chart-line text-3xl"></i>
+                            class="flex items-center justify-center bg-[#f5ae40] text-white w-16 h-16 rounded-full mx-auto group-hover:bg-white transition-all duration-300">
+                            <i class="ri-bar-chart-line text-3xl group-hover:text-[#f5ae40] transition-all duration-300"></i>
                         </div>
-                        <h3 class="text-xl font-semibold text-gray-800 mt-6 poppins-regular">
+                        <h3 class="text-xl font-semibold text-gray-800 mt-6 poppins-regular group-hover:text-white transition-all duration-300">
                             Proven Results
                         </h3>
-                        <p class="text-gray-600 mt-3 poppins-regular">
+                        <p class="text-gray-600 mt-3 poppins-regular group-hover:text-white transition-all duration-300">
                             98% client satisfaction rate across all projects delivered.
                         </p>
                     </div>
 
                     <!-- Feature 5 -->
                     <div
-                        class="group bg-white p-8 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+                        class="group bg-white hover:bg-[#f5ae40] p-8 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
                         <div
-                            class="flex items-center justify-center bg-[#f5ae40] text-white w-16 h-16 rounded-full mx-auto group-hover:bg-[#f59b40]">
-                            <i class="ri-rocket-line text-3xl"></i>
+                            class="flex items-center justify-center bg-[#f5ae40] text-white w-16 h-16 rounded-full mx-auto group-hover:bg-white transition-all duration-300">
+                            <i class="ri-rocket-line text-3xl group-hover:text-[#f5ae40] transition-all duration-300"></i>
                         </div>
-                        <h3 class="text-xl font-semibold text-gray-800 mt-6 poppins-regular">
+                        <h3 class="text-xl font-semibold text-gray-800 mt-6 poppins-regular group-hover:text-white transition-all duration-300">
                             Fast Delivery
                         </h3>
-                        <p class="text-gray-600 mt-3 poppins-regular">
+                        <p class="text-gray-600 mt-3 poppins-regular group-hover:text-white transition-all duration-300">
                             On-time delivery of projects with uncompromised quality.
                         </p>
                     </div>
 
                     <!-- Feature 6 -->
                     <div
-                        class="group bg-white p-8 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
+                        class="group bg-white hover:bg-[#f5ae40] p-8 rounded-lg shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300">
                         <div
-                            class="flex items-center justify-center bg-[#f5ae40] text-white w-16 h-16 rounded-full mx-auto group-hover:bg-[#f59b40]">
-                            <i class="ri-team-line text-3xl"></i>
+                            class="flex items-center justify-center bg-[#f5ae40] text-white w-16 h-16 rounded-full mx-auto group-hover:bg-white transition-all duration-300">
+                            <i class="ri-team-line text-3xl group-hover:text-[#f5ae40] transition-all duration-300"></i>
                         </div>
-                        <h3 class="text-xl font-semibold text-gray-800 mt-6 poppins-regular">
+                        <h3 class="text-xl font-semibold text-gray-800 mt-6 poppins-regular group-hover:text-white transition-all duration-300">
                             Dedicated Team
                         </h3>
-                        <p class="text-gray-600 mt-3 poppins-regular">
+                        <p class="text-gray-600 mt-3 poppins-regular group-hover:text-white transition-all duration-300">
                             A passionate team committed to driving your success.
                         </p>
                     </div>
@@ -564,14 +566,14 @@
                     <div class="owl-carousel owl-theme w-full">
                         <div class="item hover:scale-95 transition-transform duration-300">
                             <div
-                                class="testimonal_card sm:h-72 md:h-64 h-64 bg-white rounded-lg shadow-lg  transition-all duration-300 p-6 cursor-pointer">
-                                <p class="text-black poppins-regular text-md">"The team at Aiims exceeded our
+                                class="group testimonal_card sm:h-72 md:h-64 h-64 bg-white hover:bg-[#f5ae40] rounded-lg shadow-lg  transition-all duration-300 p-6 cursor-pointer">
+                                <p class="text-black poppins-regular text-md group-hover:text-white transition-all duration-300">"The team at Aiims exceeded our
                                     expectations.
                                     Their innovative solutions have helped our business thrive. Highly recommend!"</p>
                                 <div class="user_detail_container flex gap-5 mt-5 items-center">
                                     <img src="assets/img/01.png" alt="" class="!w-20">
                                     <div class="user_details">
-                                        <h5 class="text-[#f5ae40] poppins-regular text-lg">Tammy White</h5>
+                                        <h5 class="text-[#f5ae40] poppins-regular text-lg group-hover:text-white transition-all duration-300">Tammy White</h5>
                                         <p class="text-black poppins-regular text-sm font-semibold">innovilla
                                         </p>
                                     </div>
@@ -580,13 +582,13 @@
                         </div>
                         <div class="item hover:scale-95 transition-transform duration-300">
                             <div
-                                class="testimonal_card  sm:h-72 md:h-64 h-64 bg-white rounded-lg shadow-lg  transition-all duration-300 p-6 cursor-pointer">
-                                <p class="text-black poppins-regular text-md">"Their support and expertise have been
+                                class="group testimonal_card sm:h-72 md:h-64 h-64 bg-white hover:bg-[#f5ae40] rounded-lg shadow-lg  transition-all duration-300 p-6 cursor-pointer">
+                                <p class="text-black poppins-regular text-md group-hover:text-white transition-all duration-300">"Their support and expertise have been
                                     invaluable to our growth. A trusted partner for our IT needs."</p>
                                 <div class="user_detail_container flex gap-5 mt-5 items-center">
                                     <img src="assets/img/02.png" alt="" class="!w-20">
                                     <div class="user_details">
-                                        <h5 class="text-[#f5ae40] poppins-regular text-lg">John Doe</h5>
+                                        <h5 class="text-[#f5ae40] poppins-regular text-lg group-hover:text-white transition-all duration-300">John Doe</h5>
                                         <p class="text-black poppins-regular text-sm font-semibold">CEO, TechCorp
                                         </p>
                                     </div>
@@ -595,14 +597,14 @@
                         </div>
                         <div class="item hover:scale-95 transition-transform duration-300">
                             <div
-                                class="testimonal_card  sm:h-72 md:h-64 bg-white rounded-lg shadow-lg  transition-all duration-300 p-6 cursor-pointer">
-                                <p class="text-black poppins-regular text-md">"The team at Aiims exceeded our
+                                class="group testimonal_card sm:h-72 md:h-64 h-64 bg-white hover:bg-[#f5ae40] rounded-lg shadow-lg  transition-all duration-300 p-6 cursor-pointer">
+                                <p class="text-black poppins-regular text-md group-hover:text-white transition-all duration-300">"The team at Aiims exceeded our
                                     expectations.
                                     Their innovative solutions have helped our business thrive. Highly recommend!"</p>
                                 <div class="user_detail_container flex gap-5 mt-5 items-center">
                                     <img src="assets/img/03.png" alt="" class="!w-20">
                                     <div class="user_details">
-                                        <h5 class="text-[#f5ae40] poppins-regular text-lg">Sarah Johnson</h5>
+                                        <h5 class="text-[#f5ae40] poppins-regular text-lg group-hover:text-white transition-all duration-300">Sarah Johnson</h5>
                                         <p class="text-black poppins-regular text-sm font-semibold">CTO, Innovate Inc.
                                         </p>
                                     </div>
@@ -611,15 +613,15 @@
                         </div>
                         <div class="item hover:scale-95 transition-transform duration-300">
                             <div
-                                class="testimonal_card h-64 sm:h-72 md:h-64 bg-white rounded-lg shadow-lg  transition-all duration-300 p-6 cursor-pointer">
-                                <p class="text-black poppins-regular text-md">"Amazing team with outstanding technical
+                                class="group testimonal_card sm:h-72 md:h-64 h-64 bg-white hover:bg-[#f5ae40] rounded-lg shadow-lg  transition-all duration-300 p-6 cursor-pointer">
+                                <p class="text-black poppins-regular text-md group-hover:text-white transition-all duration-300">"Amazing team with outstanding technical
                                     skills. Our project was delivered on time and with great quality."
                                 </p>
                                 </p>
                                 <div class="user_detail_container flex gap-5 mt-5 items-center">
                                     <img src="assets/img/04.png" alt="" class="!w-20">
                                     <div class="user_details">
-                                        <h5 class="text-[#f5ae40] poppins-regular text-lg">Michael Lee</h5>
+                                        <h5 class="text-[#f5ae40] poppins-regular text-lg group-hover:text-white transition-all duration-300">Michael Lee</h5>
                                         <p class="text-black poppins-regular text-sm font-semibold">Founder, StartUp Hub
                                         </p>
                                     </div>
@@ -656,42 +658,81 @@
                 <!-- Contact Form Section -->
                 <div class="bg-white p-8 rounded-lg shadow-md w-full" data-aos="fade-up">
                     <h2 class="text-3xl font-bold poppins-regular text-center mb-6 text-gray-700">Contact Us</h2>
-                    <form id="contactForm" class="grid grid-cols-2 gap-5">
+
+                    <!-- <?php
+                    // Include database connection
+                    include 'config.php';
+
+                    // Initialize success and error messages
+                    $successMessage = "";
+                    $errorMessage = "";
+
+                    // Process form submission
+                    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+                        // Get and sanitize form inputs
+                        $name = mysqli_real_escape_string($conn, $_POST['name']);
+                        $email = mysqli_real_escape_string($conn, $_POST['email']);
+                        $phone = mysqli_real_escape_string($conn, $_POST['phone']);
+                        $message = mysqli_real_escape_string($conn, $_POST['message']);
+                        $submission_date = date('Y-m-d H:i:s');
+
+                        // Server-side validation
+                        if (empty($name) || strlen($name) < 3) {
+                            $errorMessage = "Name must be at least 3 characters.";
+                        } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+                            $errorMessage = "Please enter a valid email address.";
+                        } elseif (!preg_match("/^[0-9]{10}$/", $phone)) {
+                            $errorMessage = "Phone number must be 10 digits.";
+                        } elseif (empty($message)) {
+                            $errorMessage = "Message is required.";
+                        } else {
+                            // If validation passes, insert data into the database
+                            $query = "INSERT INTO contact_form (full_name, email, phone, message, submission_date) 
+                  VALUES ('$name', '$email', '$phone', '$message', '$submission_date')";
+
+                            if (mysqli_query($conn, $query)) {
+                                $successMessage = "Form submitted successfully!";
+                            } else {
+                                $errorMessage = "Error: Unable to submit the form.";
+                            }
+                        }
+                    }
+                    ?> -->
+                    <form id="contactForm" class="grid grid-cols-2 gap-5" method="POST" action="index.html">
+                        <!-- Full Name -->
                         <div class="col-span-2 md:col-span-1">
                             <label for="name" class="block poppins-regular text-gray-700 font-medium">Full Name</label>
                             <input type="text" id="name" name="name"
                                 class="w-full p-3 poppins-regular mt-1 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
-                            <p id="nameError" class="text-red-500 poppins-regular text-sm mt-1 hidden">Name is required.
-                            </p>
+                            <p id="nameError" class="text-red-500 poppins-regular text-sm mt-1 hidden">Name is required.</p>
                         </div>
 
+                        <!-- Email Address -->
                         <div class="col-span-2 md:col-span-1">
-                            <label for="email" class="block poppins-regular text-gray-700 font-medium">Email
-                                Address</label>
+                            <label for="email" class="block poppins-regular text-gray-700 font-medium">Email Address</label>
                             <input type="email" id="email" name="email"
                                 class="w-full p-3 mt-1 poppins-regular border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
-                            <p id="emailError" class="text-red-500 poppins-regular text-sm mt-1 hidden">Please enter a
-                                valid email address.</p>
+                            <p id="emailError" class="text-red-500 poppins-regular text-sm mt-1 hidden">Please enter a valid email address.</p>
                         </div>
 
+                        <!-- Phone Number -->
                         <div class="col-span-2">
-                            <label for="phone" class="block poppins-regular text-gray-700 font-medium">Phone
-                                Number</label>
+                            <label for="phone" class="block poppins-regular text-gray-700 font-medium">Phone Number</label>
                             <input type="tel" id="phone" name="phone"
                                 class="w-full p-3 mt-1 poppins-regular border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                                 pattern="[0-9]{10}" />
-                            <p id="phoneError" class="text-red-500 poppins-regular text-sm mt-1 hidden">Phone number
-                                must be 10 digits.</p>
+                            <p id="phoneError" class="text-red-500 poppins-regular text-sm mt-1 hidden">Phone number must be 10 digits.</p>
                         </div>
 
+                        <!-- Message -->
                         <div class="col-span-2">
                             <label for="message" class="block poppins-regular text-gray-700 font-medium">Message</label>
                             <textarea id="message" name="message" rows="4"
                                 class="w-full p-3 mt-1 poppins-regular border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
-                            <p id="messageError" class="text-red-500 poppins-regular text-sm mt-1 hidden">Message is
-                                required.</p>
+                            <p id="messageError" class="text-red-500 poppins-regular text-sm mt-1 hidden">Message is required.</p>
                         </div>
 
+                        <!-- Submit Button -->
                         <div class="col-span-2 mt-4">
                             <button type="submit"
                                 class="bg-[#f5ae40] text-white px-6 py-2 rounded-lg hover:bg-[#f59b40]">
@@ -700,6 +741,16 @@
                         </div>
                     </form>
 
+                    <!-- Display success or error message -->
+                    <!-- <?php if (!empty($successMessage)): ?>
+                        <div class="col-span-2 mt-4 text-green-600 poppins-regular text-center">
+                            <p><?php echo $successMessage; ?></p>
+                        </div>
+                    <?php elseif (!empty($errorMessage)): ?>
+                        <div class="col-span-2 mt-4 text-red-600 poppins-regular text-center">
+                            <p><?php echo $errorMessage; ?></p>
+                        </div>
+                    <?php endif; ?> -->
                 </div>
             </div>
         </section>
@@ -756,10 +807,9 @@
                             <a href="https://www.instagram.com/aiims_softwere_systm/profilecard/?igsh=dGgzZjZvdTY2NXl3" target="_blank"
                                 class="text-white w-12 h-12 flex items-center justify-center hover:bg-[#f5ae40] transition-all duration-300 bg-gray-600 rounded-full"><i
                                     class="ri-instagram-fill text-2xl"></i></a>
-                            <a href="#"
-                                class="text-white w-12 h-12 flex items-center justify-center hover:bg-[#f5ae40] transition-all duration-300 bg-gray-600 rounded-full" target="_blank"><i
-                                    class="ri-twitter-fill text-2xl"></i></a>
-                            <a href="#"
+                            <a href="https://wa.me/8505889198?text=Hello, I would like to inquire about..."
+                                class="text-white w-12 h-12 flex items-center justify-center hover:bg-[#f5ae40] transition-all duration-300 bg-gray-600 rounded-full" target="_blank"><i class="ri-whatsapp-line text-2xl"></i></a>
+                            <a href="https://www.linkedin.com/company/application-integration-and-intelligent-monitoring-system/?viewAsMember=true"
                                 class="text-white w-12 h-12 flex items-center justify-center hover:bg-[#f5ae40] transition-all duration-300 bg-gray-600 rounded-full" target="_blank"><i
                                     class="ri-linkedin-fill text-2xl"></i></a>
                         </div>
@@ -800,8 +850,7 @@
         AOS.init({
             offset: 150,
             duration: 700,
-        }
-        );
+        });
 
         // // Initialize Lenis
         // const lenis = new Lenis();
@@ -838,8 +887,6 @@
 
             }
         });
-
-
     </script>
 </body>
 

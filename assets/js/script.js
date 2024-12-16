@@ -20,48 +20,40 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
-
-
 // header add class for bg on scroll
 
 // Get the header element and other required elements
-const header = document.querySelector('header');
-const logoContainer = document.querySelector('.text-3xl');
-const header_container = document.querySelector('.header_container');
-const header_menu = document.querySelector('#menu');
+const header = document.querySelector("header");
+const logoContainer = document.querySelector(".text-3xl");
+const header_container = document.querySelector(".header_container");
+const header_menu = document.querySelector("#menu");
 
 // Function to handle scroll event
 const handleScroll = () => {
-    // Check if the user has scrolled down more than 50px
-    if (window.scrollY > 100) {
-        // Add the bg-gray-800 class to the header
-        header.classList.add('bg-gray-800');
-        // Add lg:w-44 to the logo image
-        logoContainer.querySelector('img').classList.add('lg:w-36');
-        logoContainer.querySelector('img').classList.remove('lg:w-52');
-        // Add items-center to the flex container
-        header_menu.classList.remove('mt-3');
-        header_container.classList.add('items-center');
-        header_container.classList.remove('py-3');
-    } else {
-        // Remove the bg-gray-800 class from the header
-        header.classList.remove('bg-gray-800');
-        // Remove lg:w-44 from the logo image
-        logoContainer.querySelector('img').classList.add('lg:w-52');
-        logoContainer.querySelector('img').classList.remove('lg:w-36');
-        // Remove items-center from the flex container
-        flexContainer.classList.remove('items-center');
-    }
+  // Check if the user has scrolled down more than 50px
+  if (window.scrollY > 100) {
+    // Add the bg-gray-800 class to the header
+    header.classList.add("bg-gray-800");
+    // Add lg:w-44 to the logo image
+    logoContainer.querySelector("img").classList.add("lg:w-36");
+    logoContainer.querySelector("img").classList.remove("lg:w-52");
+    // Add items-center to the flex container
+    header_menu.classList.remove("mt-3");
+    header_container.classList.add("items-center");
+    header_container.classList.remove("py-3");
+  } else {
+    // Remove the bg-gray-800 class from the header
+    header.classList.remove("bg-gray-800");
+    // Remove lg:w-44 from the logo image
+    logoContainer.querySelector("img").classList.add("lg:w-52");
+    logoContainer.querySelector("img").classList.remove("lg:w-36");
+    // Remove items-center from the flex container
+    flexContainer.classList.remove("items-center");
+  }
 };
 
 // Listen for the scroll event
-window.addEventListener('scroll', handleScroll);
-
-
-
-
-
+window.addEventListener("scroll", handleScroll);
 
 // menu bar slide js function
 
@@ -77,21 +69,17 @@ close_menu.addEventListener("click", () => {
   mobileMenu.classList.toggle("!left-0");
 });
 
-
-
-
-
- // JavaScript for Service Popup
-const serviceCards = document.querySelectorAll('.service-card');
-const popup = document.getElementById('service-popup');
-const popupTitle = document.getElementById('popup-title');
-const popupDescription = document.getElementById('popup-description');
-const popupLink = document.getElementById('popup-link'); // Reference to the new button
-const popupClose = document.getElementById('popup-close');
+// JavaScript for Service Popup
+const serviceCards = document.querySelectorAll(".service-card");
+const popup = document.getElementById("service-popup");
+const popupTitle = document.getElementById("popup-title");
+const popupDescription = document.getElementById("popup-description");
+const popupLink = document.getElementById("popup-link"); // Reference to the new button
+const popupClose = document.getElementById("popup-close");
 
 // Open Popup with dynamic content
-serviceCards.forEach(card => {
-  card.addEventListener('click', () => {
+serviceCards.forEach((card) => {
+  card.addEventListener("click", () => {
     const service = card.dataset.service;
     const description = card.dataset.description;
     const longDescription = card.dataset.longDescription; // Get the detailed text
@@ -102,32 +90,28 @@ serviceCards.forEach(card => {
     popupLink.href = serviceLink; // Dynamically update the button link
     popupLink.textContent = `Explore more`; // Update button text dynamically
 
-    popup.classList.remove('hidden');
-    popup.classList.add('flex');
-    popup.querySelector('.relative').classList.remove('scale-95');
-    popup.querySelector('.relative').classList.add('scale-100');
+    popup.classList.remove("hidden");
+    popup.classList.add("flex");
+    popup.querySelector(".relative").classList.remove("scale-95");
+    popup.querySelector(".relative").classList.add("scale-100");
   });
 });
 
 // Close Popup
-popupClose.addEventListener('click', () => closePopup());
+popupClose.addEventListener("click", () => closePopup());
 
-popup.addEventListener('click', (e) => {
+popup.addEventListener("click", (e) => {
   if (e.target === popup) closePopup();
 });
 
 function closePopup() {
-  popup.querySelector('.relative').classList.add('scale-95');
-  popup.querySelector('.relative').classList.remove('scale-100');
+  popup.querySelector(".relative").classList.add("scale-95");
+  popup.querySelector(".relative").classList.remove("scale-100");
   setTimeout(() => {
-    popup.classList.add('hidden');
-    popup.classList.remove('flex');
+    popup.classList.add("hidden");
+    popup.classList.remove("flex");
   }, 200);
 }
-
-
-
-
 
 // Counter Animation Logic
 const counters = [
@@ -175,63 +159,58 @@ observer.observe(counterSection);
 
 
 
+document.addEventListener('DOMContentLoaded', function () {
+  document.getElementById('contactForm').addEventListener('submit', function (e) {
+      // Prevent form submission initially
+      e.preventDefault();
 
+      // Clear previous error messages
+      let errors = false;
 
+      // Validate Full Name
+      let name = document.getElementById('name').value;
+      let nameError = document.getElementById('nameError');
+      if (name.length < 3) {
+          nameError.classList.remove('hidden');
+          errors = true;
+      } else {
+          nameError.classList.add('hidden');
+      }
 
+      // Validate Email
+      let email = document.getElementById('email').value;
+      let emailError = document.getElementById('emailError');
+      let emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+      if (!emailPattern.test(email)) {
+          emailError.classList.remove('hidden');
+          errors = true;
+      } else {
+          emailError.classList.add('hidden');
+      }
 
-// contact form vaidation
+      // Validate Phone
+      let phone = document.getElementById('phone').value;
+      let phoneError = document.getElementById('phoneError');
+      if (!/^\d{10}$/.test(phone)) {
+          phoneError.classList.remove('hidden');
+          errors = true;
+      } else {
+          phoneError.classList.add('hidden');
+      }
 
-document.getElementById('contactForm').addEventListener('submit', function (e) {
-  e.preventDefault(); // Prevent form submission
+      // Validate Message
+      let message = document.getElementById('message').value;
+      let messageError = document.getElementById('messageError');
+      if (message.trim() === '') {
+          messageError.classList.remove('hidden');
+          errors = true;
+      } else {
+          messageError.classList.add('hidden');
+      }
 
-  // Clear previous error messages
-  document.getElementById('nameError').classList.add('hidden');
-  document.getElementById('emailError').classList.add('hidden');
-  document.getElementById('phoneError').classList.add('hidden');
-  document.getElementById('messageError').classList.add('hidden');
-
-  // Get form field values
-  const name = document.getElementById('name').value.trim();
-  const email = document.getElementById('email').value.trim();
-  const phone = document.getElementById('phone').value.trim();
-  const message = document.getElementById('message').value.trim();
-
-  let valid = true;
-
-  // Validate Name
-  if (name.length < 3) {
-      document.getElementById('nameError').textContent = 'Name must be at least 3 characters.';
-      document.getElementById('nameError').classList.remove('hidden');
-      valid = false;
-  }
-
-  // Validate Email
-  const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-  if (!emailPattern.test(email)) {
-      document.getElementById('emailError').textContent = 'Please enter a valid email address.';
-      document.getElementById('emailError').classList.remove('hidden');
-      valid = false;
-  }
-
-  // Validate Phone Number
-  const phonePattern = /^[0-9]{10}$/;
-  if (!phonePattern.test(phone)) {
-      document.getElementById('phoneError').textContent = 'Phone number must be 10 digits.';
-      document.getElementById('phoneError').classList.remove('hidden');
-      valid = false;
-  }
-
-  // Validate Message
-  if (message.length === 0) {
-      document.getElementById('messageError').textContent = 'Message is required.';
-      document.getElementById('messageError').classList.remove('hidden');
-      valid = false;
-  }
-
-  // If all validations pass, submit the form
-  if (valid) {
-      console.log('Form is valid. Submitting...');
-      this.submit();
-  }
+      // If no errors, submit the form
+      if (!errors) {
+          this.submit();
+      }
+  });
 });
-
