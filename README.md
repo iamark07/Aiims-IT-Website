@@ -1,1 +1,1 @@
-https://iamark07.github.io/Information-Technology/
+https://iamark07.github.io/Aiims-IT-Website/
