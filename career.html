@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- scroll animation css cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- fav icon -->
+    <link rel="icon" type="image/svg+xml" href="assets/img/Aiims-Logo__3.png" />
+
+
+    <!-- rimix icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- owl caraousel cdn -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+
+    <title>Aiims Career</title>
+</head>
+
+<body>
+
+    <main class="w-full ">
+
+        <!-- Page Loader -->
+        <div id="page-loader"
+            class="fixed inset-0 flex items-center justify-center bg-gray-800 z-50 transition-opacity duration-500">
+            <img src="assets/img/Aiims-Logo__4.png" alt="" class="loader_animate w-24">
+        </div>
+
+        <!-- Header Section -->
+        <header
+            class="fixed top-0 left-0 z-40 transition-all duration-300 bg-none text-white py-3 px-5 xl:pe-20 lg:pe-10 w-full">
+            <div class="header_container transition-all duration-300 flex justify-between py-3 w-full">
+                <!-- Logo -->
+                <div class="text-3xl poppins-regular"><a href="index.html"><img src="assets/img/aiims-new-logo.png"
+                            alt="" class="w-32 md:w-44 lg:w-52 transition-all duration-300"></a></div>
+
+                <!-- Menu Button (For Mobile) -->
+                <button id="menu-btn" class="lg:hidden text-white focus:outline-none">
+                    <i class="ri-menu-line text-3xl text-white"></i>
+                </button>
+
+                <!-- Navigation Links -->
+                <nav id="menu" class="hidden lg:flex gap-8 mt-3">
+                    <a href="index.html"
+                        class="hover:text-[#f5ae40] border-b-2 border-transparent h-fit hover:border-[#f5ae40] text-lg inline-block poppins-regular">Home</a>
+                    <a href="about.html"
+                        class="hover:text-[#f5ae40] text-lg border-b-2 border-transparent h-fit hover:border-[#f5ae40] inline-block poppins-regular">About</a>
+                    <a href="service.html"
+                        class="hover:text-[#f5ae40] text-lg border-b-2 border-transparent h-fit hover:border-[#f5ae40] inline-block poppins-regular">Services</a>
+                    <a href="interior_design.html"
+                        class="hover:text-[#f5ae40] border-b-2 border-transparent h-fit hover:border-[#f5ae40] text-lg inline-block poppins-regular">Smart
+                        Interiors</a>
+                    <a href="career.html"
+                        class="hover:text-[#f59b40] font-semibold text-[#f5ae40] border-b-2 border-transparent h-fit hover:border-[#f5ae40] text-lg inline-block poppins-regular">Career</a>
+                    <a href="#technology-section"
+                        class="hover:text-[#f5ae40] border-b-2 border-transparent h-fit hover:border-[#f5ae40] text-lg inline-block poppins-regular">Technology</a>
+                    <a href="contact.html"
+                        class="hover:text-[#f5ae40] border-b-2 border-transparent h-fit hover:border-[#f5ae40] text-lg inline-block poppins-regular">Contact</a>
+                </nav>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu"
+                class="lg:hidden absolute top-0 -left-full h-[100dvh] w-full flex transition-all duration-300">
+                <nav class="py-4 px-7 h-full w-3/5 bg-gray-800 relative">
+                    <!-- Logo -->
+                    <div class="text-2xl poppins-regular"><a href="index.html"><img src="assets/img/aiims-new-logo.png"
+                                alt="" class="w-32"></a></div>
+                    <ul class="!mt-10 flex flex-col gap-3">
+                        <li><a href="index.html"
+                                class="hover:text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-lg inline-block poppins-regular">Home</a>
+                        </li>
+                        <li><a href="about.html"
+                                class="hover:text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-lg inline-block poppins-regular">About</a>
+                        </li>
+                        <li><a href="service.html"
+                                class="hover:text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-lg inline-block poppins-regular">Services</a>
+                        </li>
+                        <li><a href="interior_design.html"
+                                class="hover:text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-lg inline-block poppins-regular">Smart
+                                Interiors</a>
+                        </li>
+                        <li><a href="career.html"
+                                class="hover:text-[#f59b40] font-semibold text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-lg poppins-regular">Career</a>
+                        </li>
+                        <li><a href="#technology-section"
+                                class="hover:text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-lg poppins-regular">Technology</a>
+                        </li>
+                        <li><a href="contact.html"
+                                class="hover:text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-lg inline-block poppins-regular">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="absolute bottom-5 flex gap-5 w-full">
+                        <a href="https://www.linkedin.com/company/application-integration-and-intelligent-monitoring-system/?viewAsMember=true"
+                            target="_blank" class="inline-block hover:text-gray-300"><i
+                                class="ri-linkedin-box-fill text-4xl"></i>
+                        </a>
+                        <a href="https://wa.me/8505889198?text=Hello, I would like to inquire about..." target="_blank"
+                            class="inline-block hover:text-gray-300"><i class="ri-whatsapp-line text-4xl"></i>
+                        </a>
+                    </div>
+                </nav>
+                <span class="inline-block h-full w-2/5" id="close_menu"></span>
+            </div>
+        </header>
+
+        <!-- hero section -->
+        <section class="hero_section relative w-full overflow-hidden">
+            <!-- hero bg videp -->
+            <video src="assets/video/bg-video-6.mp4" loop autoplay muted
+                class="-z-10 absolute top-0 left-0 w-full h-[100dvh] object-cover">
+            </video>
+            <div class="absolute top-0 left-0 w-full h-full bg-black opacity-30 -z-10"></div>
+            <div
+                class="hero_section_content transition-all duration-700 relative w-full h-[100dvh] flex flex-col items-center justify-center px-3">
+                <h1
+                    class="text-white text-4xl md:text-6xl poppins-regular text-center mt-32 transition-all duration-500 hover:scale-110">
+                    A World of Opportunities
+                    <br><span class="text-3xl sm:text-4xl md:text-5xl">Awaits You</span>
+                </h1>
+                <p class="text-center text-white text-lg mt-5 poppins-regular">Join a team of innovators and visionaries
+                    shaping the future of technology. Your career begins here!</p>
+            </div>
+
+        </section>
+
+
+        <!-- career Section -->
+        <section class="career-section py-16 px-6 lg:px-20 bg-[#f9f9f9]">
+            <div class="container mx-auto">
+                <div class="text-center mb-12">
+                    <h1 class="text-4xl font-bold text-gray-800 poppins-regular" data-aos="fade-up">Open Position</h1>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto poppins-regular" data-aos="fade-up">
+                        Explore exciting roles in technology where your skills and creativity can flourish. Let’s build
+                        impactful solutions and achieve success together.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10" data-aos="fade-up">
+                    <!-- Job Card 1 -->
+                    <div
+                        class="group bg-white hover:bg-[#f5ae40] rounded-lg shadow-lg p-6 hover:scale-105 transition-all duration-300">
+                        <h3
+                            class="text-xl font-semibold text-gray-800 group-hover:text-white transition-all duration-300">
+                            Frontend Developer</h3>
+                        <p class="text-gray-600 mt-2 group-hover:text-white transition-all duration-300">Design and
+                            develop user interfaces with React and TailwindCSS.</p>
+                        <p class="text-sm text-gray-500 mt-2 group-hover:text-white transition-all duration-300">Skills:
+                            HTML, CSS, JavaScript, React</p>
+                        <button
+                            class="mt-4 px-4 py-2 bg-[#f5ae40] text-white group-hover:text-[#f5ae40] rounded-lg group-hover:bg-white">
+                            Apply Now
+                        </button>
+                    </div>
+                    <!-- Job Card 2 -->
+                    <div
+                        class="group bg-white hover:bg-[#f5ae40] rounded-lg shadow-lg p-6 hover:scale-105 transition-all duration-300">
+                        <h3
+                            class="text-xl font-semibold text-gray-800 group-hover:text-white transition-all duration-300">
+                            Backend Developer</h3>
+                        <p class="text-gray-600 mt-2 group-hover:text-white transition-all duration-300">Build scalable
+                            APIs and work with databases like MongoDB and PostgreSQL.</p>
+                        <p class="text-sm text-gray-500 mt-2 group-hover:text-white transition-all duration-300">Skills:
+                            Node.js, Express, MongoDB, SQL</p>
+                        <button
+                            class="mt-4 px-4 py-2 bg-[#f5ae40] text-white group-hover:text-[#f5ae40] rounded-lg group-hover:bg-white">
+                            Apply Now
+                        </button>
+                    </div>
+                    <!-- Job Card 3 -->
+                    <div
+                        class="group bg-white hover:bg-[#f5ae40] rounded-lg shadow-lg p-6 hover:scale-105 transition-all duration-300">
+                        <h3
+                            class="text-xl font-semibold text-gray-800 group-hover:text-white transition-all duration-300">
+                            UI/UX Designer</h3>
+                        <p class="text-gray-600 mt-2 group-hover:text-white transition-all duration-300">Create
+                            intuitive user experiences and beautiful designs.</p>
+                        <p class="text-sm text-gray-500 mt-2 group-hover:text-white transition-all duration-300">Skills:
+                            Figma, Adobe XD, Prototyping</p>
+                        <button
+                            class="mt-4 px-4 py-2 bg-[#f5ae40] text-white group-hover:text-[#f5ae40] rounded-lg group-hover:bg-white">
+                            Apply Now
+                        </button>
+                    </div>
+                    <!-- Job Card 4 -->
+                    <div
+                        class="group bg-white hover:bg-[#f5ae40] rounded-lg shadow-lg p-6 hover:scale-105 transition-all duration-300">
+                        <h3
+                            class="text-xl font-semibold text-gray-800 group-hover:text-white transition-all duration-300">
+                            Data Analyst</h3>
+                        <p class="text-gray-600 mt-2 group-hover:text-white transition-all duration-300">Analyze and
+                            interpret complex data sets to drive business decisions.</p>
+                        <p class="text-sm text-gray-500 mt-2 group-hover:text-white transition-all duration-300">Skills:
+                            SQL, Python, Tableau</p>
+                        <button
+                            class="mt-4 px-4 py-2 bg-[#f5ae40] text-white group-hover:text-[#f5ae40] rounded-lg group-hover:bg-white">
+                            Apply Now
+                        </button>
+                    </div>
+                    <!-- Job Card 5 -->
+                    <div
+                        class="group bg-white hover:bg-[#f5ae40] rounded-lg shadow-lg p-6 hover:scale-105 transition-all duration-300">
+                        <h3
+                            class="text-xl font-semibold text-gray-800 group-hover:text-white transition-all duration-300">
+                            Cloud Engineer</h3>
+                        <p class="text-gray-600 mt-2 group-hover:text-white transition-all duration-300">Design and
+                            manage cloud infrastructure for scalable applications.</p>
+                        <p class="text-sm text-gray-500 mt-2 group-hover:text-white transition-all duration-300">Skills:
+                            AWS, Azure, Kubernetes</p>
+                        <button
+                            class="mt-4 px-4 py-2 bg-[#f5ae40] text-white group-hover:text-[#f5ae40] rounded-lg group-hover:bg-white">
+                            Apply Now
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- footer section -->
+        <footer class="bg-gray-800 text-white pt-10 pb-5 px-5 lg:px-10 overflow-hidden">
+            <div class="container_wrapper mx-auto px-4">
+                <!-- Footer Content -->
+                <div class="grid grid-cols-6 gap-8">
+                    <!-- Company Logo and Description -->
+                    <div class="col-span-6 lg:col-span-2 flex flex-col items-center lg:items-start">
+                        <img src="assets/img/aiims-new-logo.png" alt="Company Logo" class="w-44 mb-4" />
+                        <p class="text-gray-400 text-center lg:text-left poppins-regular">
+                            Aiims(Application Integration and Intelligent
+                            Monitoring System) - Shaping the future of IT with innovative solutions and unparalleled
+                            expertise.
+                        </p>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                        <h3
+                            class="text-lg font-bold mb-4 poppins-regular border-b-2 pb-1 inline-block border-[#f5ae40]">
+                            Quick Links</h3>
+                        <ul class="space-y-2">
+                            <li><a href="index.html" class="text-gray-400 hover:text-white poppins-regular">Home</a>
+                            </li>
+                            <li><a href="about.html" class="text-gray-400 hover:text-white poppins-regular">About Us</a>
+                            </li>
+                            <li><a href="service.html"
+                                    class="text-gray-400 hover:text-white poppins-regular">Services</a></li>
+                            <li><a href="career.html" class="text-gray-400 hover:text-white poppins-regular">Career</a>
+                            </li>
+                            <li><a href="contact.html"
+                                    class="text-gray-400 hover:text-white poppins-regular">Contact</a></li>
+                            <li><a href="index.html#technology-section"
+                                    class="text-gray-400 hover:text-white poppins-regular">Technology</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div class="col-span-6 sm:col-span-3 lg:col-span-2">
+                        <h3
+                            class="text-lg font-bold mb-4 poppins-regular border-b-2 pb-1 inline-block border-[#f5ae40]">
+                            Contact Information</h3>
+                        <ul class="space-y-2">
+                            <li class="text-gray-400 poppins-regular">
+                                <i class="ri-map-pin-line text-[#f5ae40]"></i> A-145, Gali No.8, Meet Nagar North East
+                                Delhi, Delhi-110093
+                            </li>
+                            <li class="text-gray-400 poppins-regular">
+                                <a href="tel:8505889198"><i class="ri-phone-line text-[#f5ae40]"></i> 8505889198</a>
+                            </li>
+                            <li class="text-gray-400 poppins-regular">
+                                <a href="mailto:pawanpanchal1206@gmail.com"><i class="ri-mail-line text-[#f5ae40]"></i>
+                                    pawanpanchal1206@gmail.com</a>
+                            </li>
+                        </ul>
+                        <div class="flex space-x-4 mt-7">
+                            <a href="https://www.facebook.com/profile.php?id=61570437063694&mibextid=ZbWKwL"
+                                class="text-white w-12 h-12 flex items-center justify-center hover:bg-[#f5ae40] transition-all duration-300 bg-gray-600 rounded-full"
+                                target="_blank"><i class="ri-facebook-fill text-2xl"></i></a>
+                            <a href="https://www.instagram.com/aiims_softwere_systm/profilecard/?igsh=dGgzZjZvdTY2NXl3"
+                                target="_blank"
+                                class="text-white w-12 h-12 flex items-center justify-center hover:bg-[#f5ae40] transition-all duration-300 bg-gray-600 rounded-full"><i
+                                    class="ri-instagram-fill text-2xl"></i></a>
+                            <a href="https://wa.me/8505889198?text=Hello, I would like to inquire about..."
+                                class="text-white w-12 h-12 flex items-center justify-center hover:bg-[#f5ae40] transition-all duration-300 bg-gray-600 rounded-full"
+                                target="_blank"><i class="ri-whatsapp-line text-2xl"></i></a>
+                            <a href="https://www.linkedin.com/company/application-integration-and-intelligent-monitoring-system/?viewAsMember=true"
+                                class="text-white w-12 h-12 flex items-center justify-center hover:bg-[#f5ae40] transition-all duration-300 bg-gray-600 rounded-full"
+                                target="_blank"><i class="ri-linkedin-fill text-2xl"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Social Media and Copyright -->
+                <div class="mt-8 border-t border-gray-700 pt-6 text-center flex justify-center">
+                    <div>
+                        <p class="text-gray-400 poppins-regular text-center">&copy; 2024 <span
+                                class="!text-[#f5ae40]">Aiims(Application Integration and Intelligent
+                                Monitoring System)</span> All rights reserved.</p>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <script src="assets/js/script.js"></script>
+    <!-- for smooth scroll  -->
+    <!-- <script src="https://unpkg.com/lenis@1.1.17/dist/lenis.min.js"></script> -->
+
+    <!-- owl caraousel cdn links -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- scroll animation script link -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 150,
+            duration: 700,
+        });
+
+        // // Initialize Lenis
+        // const lenis = new Lenis();
+
+        // // Use requestAnimationFrame to continuously update the scroll
+        // function raf(time) {
+        //     lenis.raf(time);
+        //     requestAnimationFrame(raf);
+        // }
+
+        // requestAnimationFrame(raf);
+
+        // testimonal card slider functions
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: false,
+            mouseDrag: true,
+            touchDrag: true,
+            dotsEach: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+
+            }
+        });
+    </script>
+</body>
+
+</html>
