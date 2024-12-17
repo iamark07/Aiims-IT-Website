@@ -123,11 +123,10 @@ const videos = document.querySelectorAll(".carousel-video");
         const dots = document.querySelectorAll(".carousel-dot");
 
         const carouselData = [
-            { title: "Welcome to the Future", description: "Experience innovation with Video 1." },
-            { title: "Unleash Creativity", description: "Video 2 highlights creativity and power." },
-            { title: "Adventure Awaits", description: "Explore the unknown with Video 3." },
-            { title: "Breaking Boundaries", description: "Video 4 inspires boldness and exploration." },
-            { title: "Discover the Magic", description: "Step into the extraordinary with Video 5." },
+            { title: "SoftWare Development", description: "Build custom software solutions tailored to your unique business needs." },
+            { title: "Cloud Solutions", description: "Modernize your operations with scalable and secure cloud services." },
+            { title: "IT Consulting", description: "Gain strategic insights and expert advice to elevate your IT infrastructure." },
+            { title: "Mobile App Development", description: "Design and develop intuitive mobile applications for iOS and Android." },
         ];
 
         let currentIndex = 0;
