@@ -35,8 +35,8 @@ const handleScroll = () => {
     // Add the bg-gray-800 class to the header
     header.classList.add("bg-gray-800");
     // Add lg:w-44 to the logo image
-    logoContainer.querySelector("img").classList.add("lg:w-36");
-    logoContainer.querySelector("img").classList.remove("lg:w-52");
+    logoContainer.querySelector("img").classList.add("xl:w-36");
+    logoContainer.querySelector("img").classList.remove("xl:w-52");
     // Add items-center to the flex container
     header_menu.classList.remove("mt-3");
     header_container.classList.add("items-center");
@@ -45,8 +45,8 @@ const handleScroll = () => {
     // Remove the bg-gray-800 class from the header
     header.classList.remove("bg-gray-800");
     // Remove lg:w-44 from the logo image
-    logoContainer.querySelector("img").classList.add("lg:w-52");
-    logoContainer.querySelector("img").classList.remove("lg:w-36");
+    logoContainer.querySelector("img").classList.add("xl:w-52");
+    logoContainer.querySelector("img").classList.remove("xl:w-36");
     // Remove items-center from the flex container
     flexContainer.classList.remove("items-center");
   }
@@ -68,6 +68,22 @@ menuBtn.addEventListener("click", () => {
 close_menu.addEventListener("click", () => {
   mobileMenu.classList.toggle("!left-0");
 });
+
+
+
+
+// Toggle dropdown visibility for Hire Resource in mobile menu
+const hireResourceToggle = document.getElementById('hire-resource-toggle');
+const hireResourceDropdown = document.getElementById('hire-resource-dropdown');
+const drop_menu_icon = document.getElementById('drop-menu-icon');
+
+hireResourceToggle.addEventListener('click', () => {
+    hireResourceDropdown.classList.toggle('hidden');
+    drop_menu_icon.classList.toggle('rotate-180');
+});
+
+
+
 
 // JavaScript for Service Popup
 const serviceCards = document.querySelectorAll(".service-card");
@@ -115,70 +131,86 @@ function closePopup() {
 
 
 
+// caraousel video change effect
 
-const videos = document.querySelectorAll(".carousel-video");
-        const contentContainer = document.getElementById("content-container");
-        const titleEl = document.getElementById("carousel-title");
-        const descriptionEl = document.getElementById("carousel-description");
-        const dots = document.querySelectorAll(".carousel-dot");
+window.onload = function () {
+  const videos = document.querySelectorAll(".carousel-video");
+  const contentContainer = document.getElementById("content-container");
+  const titleEl = document.getElementById("carousel-title");
+  const descriptionEl = document.getElementById("carousel-description");
+  const dots = document.querySelectorAll(".carousel-dot");
 
-        const carouselData = [
-            { title: "SoftWare Development", description: "Build custom software solutions tailored to your unique business needs." },
-            { title: "Cloud Solutions", description: "Modernize your operations with scalable and secure cloud services." },
-            { title: "IT Consulting", description: "Gain strategic insights and expert advice to elevate your IT infrastructure." },
-            { title: "Mobile App Development", description: "Design and develop intuitive mobile applications for iOS and Android." },
-        ];
+  const carouselData = [
+    {
+      title: "SoftWare Development",
+      description:
+        "Build custom software solutions tailored to your unique business needs.",
+    },
+    {
+      title: "Cloud Solutions",
+      description:
+        "Modernize your operations with scalable and secure cloud services.",
+    },
+    {
+      title: "IT Consulting",
+      description:
+        "Gain strategic insights and expert advice to elevate your IT infrastructure.",
+    },
+    {
+      title: "Mobile App Development",
+      description:
+        "Design and develop intuitive mobile applications for iOS and Android.",
+    },
+  ];
 
-        let currentIndex = 0;
+  let currentIndex = 0;
 
-        // Function to switch videos and update content
-        function updateCarousel(index) {
-            // Update video visibility
-            videos.forEach((video, i) => {
-                video.classList.toggle("active", i === index);
-            });
+  // Function to switch videos and update content
+  function updateCarousel(index) {
+    // Update video visibility
+    videos.forEach((video, i) => {
+      video.classList.toggle("active", i === index);
+    });
 
-            // Update dots
-            dots.forEach((dot, i) => {
-                dot.classList.toggle("active", i === index);
-            });
+    // Update dots
+    dots.forEach((dot, i) => {
+      dot.classList.toggle("active", i === index);
+    });
 
-            // Fade out content
-            contentContainer.classList.remove("active"); // Fade out content
+    // Fade out content
+    contentContainer.classList.remove("active");
 
-            // Wait for fade-out transition to finish
-            setTimeout(() => {
-                // Update content text
-                titleEl.textContent = carouselData[index].title;
-                descriptionEl.textContent = carouselData[index].description;
+    // Wait for fade-out transition to finish
+    setTimeout(() => {
+      // Update content text
+      titleEl.textContent = carouselData[index].title;
+      descriptionEl.textContent = carouselData[index].description;
 
-                // Fade in updated content
-                contentContainer.classList.add("active"); // Fade in new content
-            }, 500); // This delay should match the fade-out duration (0.5s)
-        }
+      // Fade in updated content
+      contentContainer.classList.add("active");
+    }, 500); // This delay should match the fade-out duration (0.5s)
+  }
 
-        // Auto-slide
-        function autoSlide() {
-            currentIndex = (currentIndex + 1) % videos.length;
-            updateCarousel(currentIndex);
-        }
+  // Auto-slide functionality
+  function autoSlide() {
+    currentIndex = (currentIndex + 1) % videos.length;
+    updateCarousel(currentIndex);
+  }
 
-        // Initial setup
-        updateCarousel(currentIndex);
-        let autoSlideInterval = setInterval(autoSlide, 8000); // Change every 8 seconds
+  // Initial setup
+  updateCarousel(currentIndex);
+  let autoSlideInterval = setInterval(autoSlide, 8000); // Change every 8 seconds
 
-        // Add event listeners for manual controls
-        dots.forEach((dot, index) => {
-            dot.addEventListener("click", () => {
-                clearInterval(autoSlideInterval); // Stop auto-slide on manual interaction
-                currentIndex = index;
-                updateCarousel(index);
-                autoSlideInterval = setInterval(autoSlide, 8000); // Restart auto-slide
-            });
-        });
-
-
-
+  // Add event listeners for manual controls
+  dots.forEach((dot, index) => {
+    dot.addEventListener("click", () => {
+      clearInterval(autoSlideInterval); // Stop auto-slide on manual interaction
+      currentIndex = index;
+      updateCarousel(index);
+      autoSlideInterval = setInterval(autoSlide, 8000); // Restart auto-slide
+    });
+  });
+};
 
 
 // Counter Animation Logic
@@ -225,10 +257,10 @@ const observer = new IntersectionObserver(
 
 observer.observe(counterSection);
 
-
-
-document.addEventListener('DOMContentLoaded', function () {
-  document.getElementById('contactForm').addEventListener('submit', function (e) {
+document.addEventListener("DOMContentLoaded", function () {
+  document
+    .getElementById("contactForm")
+    .addEventListener("submit", function (e) {
       // Prevent form submission initially
       e.preventDefault();
 
@@ -236,49 +268,49 @@ document.addEventListener('DOMContentLoaded', function () {
       let errors = false;
 
       // Validate Full Name
-      let name = document.getElementById('name').value;
-      let nameError = document.getElementById('nameError');
+      let name = document.getElementById("name").value;
+      let nameError = document.getElementById("nameError");
       if (name.length < 3) {
-          nameError.classList.remove('hidden');
-          errors = true;
+        nameError.classList.remove("hidden");
+        errors = true;
       } else {
-          nameError.classList.add('hidden');
+        nameError.classList.add("hidden");
       }
 
       // Validate Email
-      let email = document.getElementById('email').value;
-      let emailError = document.getElementById('emailError');
+      let email = document.getElementById("email").value;
+      let emailError = document.getElementById("emailError");
       let emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
       if (!emailPattern.test(email)) {
-          emailError.classList.remove('hidden');
-          errors = true;
+        emailError.classList.remove("hidden");
+        errors = true;
       } else {
-          emailError.classList.add('hidden');
+        emailError.classList.add("hidden");
       }
 
       // Validate Phone
-      let phone = document.getElementById('phone').value;
-      let phoneError = document.getElementById('phoneError');
+      let phone = document.getElementById("phone").value;
+      let phoneError = document.getElementById("phoneError");
       if (!/^\d{10}$/.test(phone)) {
-          phoneError.classList.remove('hidden');
-          errors = true;
+        phoneError.classList.remove("hidden");
+        errors = true;
       } else {
-          phoneError.classList.add('hidden');
+        phoneError.classList.add("hidden");
       }
 
       // Validate Message
-      let message = document.getElementById('message').value;
-      let messageError = document.getElementById('messageError');
-      if (message.trim() === '') {
-          messageError.classList.remove('hidden');
-          errors = true;
+      let message = document.getElementById("message").value;
+      let messageError = document.getElementById("messageError");
+      if (message.trim() === "") {
+        messageError.classList.remove("hidden");
+        errors = true;
       } else {
-          messageError.classList.add('hidden');
+        messageError.classList.add("hidden");
       }
 
       // If no errors, submit the form
       if (!errors) {
-          this.submit();
+        this.submit();
       }
-  });
+    });
 });

@@ -55,7 +55,7 @@
             <div class="header_container transition-all duration-300 flex justify-between py-3 w-full">
                 <!-- Logo -->
                 <div class="text-3xl poppins-regular"><a href="index.html"><img src="assets/img/aiims-new-logo.png"
-                            alt="" class="w-32 md:w-44 lg:w-52 transition-all duration-300"></a></div>
+                            alt="" class="w-32 md:w-44 xl:w-52 transition-all duration-300"></a></div>
 
                 <!-- Menu Button (For Mobile) -->
                 <button id="menu-btn" class="lg:hidden text-white focus:outline-none">
@@ -63,23 +63,42 @@
                 </button>
 
                 <!-- Navigation Links -->
-                <nav id="menu" class="hidden lg:flex gap-8 mt-3">
+                <nav id="menu" class="hidden lg:flex gap-8 mt-3 relative">
                     <a href="index.html"
-                        class="hover:text-[#f59b40] font-semibold text-[#f5ae40] border-b-2 border-transparent h-fit hover:border-[#f5ae40] text-lg inline-block poppins-regular">Home</a>
-                    <a href="about.html"
-                        class="hover:text-[#f5ae40] text-lg border-b-2 border-transparent h-fit hover:border-[#f5ae40] inline-block poppins-regular">About</a>
+                        class="hover:text-[#f59b40] font-semibold text-[#f5ae40] border-b-2 border-transparent h-fit hover:border-[#f5ae40] text-md xl:text-lg inline-block poppins-regular">Home</a>
+
+                    <!-- Hire Resource with Dropdown -->
+                    <div class="relative group">
+                        <a href=""
+                            class="group-hover:text-[#f5ae40] text-md xl:text-lg border-b-2 border-transparent h-fit group-hover:border-[#f5ae40] flex items-center poppins-regular">
+                            Hire Resource <i
+                                class="ri-arrow-down-s-line text-white ms-1 group-hover:text-[#f5ae40] group-hover:rotate-180"></i>
+                        </a>
+                        <!-- Dropdown Menu -->
+                        <div
+                            class="absolute left-0 top-10 hidden group-hover:flex flex-col bg-white shadow-lg rounded-sm overflow-hidden z-10 w-48">
+                            <a href="frontend.html"
+                                class="block px-4 py-3 text-gray-700 hover:bg-[#f5ae40] hover:text-white text-md poppins-regular transition-all duration-300 hover:ps-6">Frontend</a>
+                            <a href="backend.html"
+                                class="block px-4 py-3 text-gray-700 hover:bg-[#f5ae40] hover:text-white text-md poppins-regular transition-all duration-300 hover:ps-6">Backend</a>
+                            <a href="android.html"
+                                class="block px-4 py-3 text-gray-700 hover:bg-[#f5ae40] hover:text-white text-md poppins-regular transition-all duration-300 hover:ps-6">Android</a>
+                        </div>
+                    </div>
+
                     <a href="service.html"
-                        class="hover:text-[#f5ae40] text-lg border-b-2 border-transparent h-fit hover:border-[#f5ae40] inline-block poppins-regular">Services</a>
+                        class="hover:text-[#f5ae40] text-md xl:text-lg border-b-2 border-transparent h-fit hover:border-[#f5ae40] inline-block poppins-regular">Services</a>
                     <a href="interior_design.html"
-                        class="hover:text-[#f5ae40] border-b-2 border-transparent h-fit hover:border-[#f5ae40] text-lg inline-block poppins-regular">Smart
+                        class="hover:text-[#f5ae40] border-b-2 border-transparent h-fit hover:border-[#f5ae40] text-md xl:text-lg inline-block poppins-regular">Smart
                         Interiors</a>
                     <a href="career.html"
-                        class="hover:text-[#f5ae40] border-b-2 border-transparent h-fit hover:border-[#f5ae40] text-lg inline-block poppins-regular">Career</a>
+                        class="hover:text-[#f5ae40] border-b-2 border-transparent h-fit hover:border-[#f5ae40] text-md xl:text-lg inline-block poppins-regular">Career</a>
                     <a href="#technology-section"
-                        class="hover:text-[#f5ae40] border-b-2 border-transparent h-fit hover:border-[#f5ae40] text-lg inline-block poppins-regular">Technology</a>
+                        class="hover:text-[#f5ae40] border-b-2 border-transparent h-fit hover:border-[#f5ae40] text-md xl:text-lg inline-block poppins-regular">Technology</a>
                     <a href="contact.html"
-                        class="hover:text-[#f5ae40] border-b-2 border-transparent h-fit hover:border-[#f5ae40] text-lg inline-block poppins-regular">Contact</a>
+                        class="hover:text-[#f5ae40] border-b-2 border-transparent h-fit hover:border-[#f5ae40] text-md xl:text-lg inline-block poppins-regular">Contact</a>
                 </nav>
+
             </div>
 
             <!-- Mobile Menu -->
@@ -91,26 +110,46 @@
                                 alt="" class="w-32"></a></div>
                     <ul class="!mt-10 flex flex-col gap-3">
                         <li><a href="index.html"
-                                class="hover:text-[#f59b40] font-semibold text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-lg inline-block poppins-regular">Home</a>
+                                class="hover:text-[#f59b40] font-semibold text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-md inline-block poppins-regular">Home</a>
                         </li>
                         <li><a href="about.html"
-                                class="hover:text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-lg inline-block poppins-regular">About</a>
+                                class="hover:text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-md inline-block poppins-regular">About</a>
+                        </li>
+                        <li class="relative group">
+                            <!-- Hire Resource with Dropdown -->
+                            <a id="hire-resource-toggle"
+                                class="group-hover:text-[#f5ae40] hover:border-b-2 group-hover:border-[#f5ae40] border-b-2 border-transparent text-md inline-block poppins-regular cursor-pointer">
+                                Hire Resource <i id="drop-menu-icon" class="ri-arrow-down-s-line text-white ms-1 group-hover:text-[#f5ae40]"></i>
+                            </a>
+                            <!-- Dropdown -->
+                            <ul id="hire-resource-dropdown"
+                                class="hidden flex-col mt-2 bg-gray-700 border border-gray-600 rounded-lg shadow-lg">
+                                <li><a href="frontend.html"
+                                        class="block px-4 py-2 text-gray-300 hover:bg-[#f5ae40] hover:text-white text-sm poppins-regular transition-all duration-300 hover:ps-6">Frontend</a>
+                                </li>
+                                <li><a href="backend.html"
+                                        class="block px-4 py-2 text-gray-300 hover:bg-[#f5ae40] hover:text-white text-sm poppins-regular transition-all duration-300 hover:ps-6">Backend</a>
+                                </li>
+                                <li><a href="android.html"
+                                        class="block px-4 py-2 text-gray-300 hover:bg-[#f5ae40] hover:text-white text-sm poppins-regular transition-all duration-300 hover:ps-6">Android</a>
+                                </li>
+                            </ul>
                         </li>
                         <li><a href="service.html"
-                                class="hover:text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-lg inline-block poppins-regular">Services</a>
+                                class="hover:text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-md inline-block poppins-regular">Services</a>
                         </li>
                         <li><a href="interior_design.html"
-                                class="hover:text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-lg inline-block poppins-regular">Smart
+                                class="hover:text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-md inline-block poppins-regular">Smart
                                 Interiors</a>
                         </li>
                         <li><a href="career.html"
-                                class="hover:text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-lg poppins-regular">Career</a>
+                                class="hover:text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-md poppins-regular">Career</a>
                         </li>
                         <li><a href="#technology-section"
-                                class="hover:text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-lg poppins-regular">Technology</a>
+                                class="hover:text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-md poppins-regular">Technology</a>
                         </li>
                         <li><a href="contact.html"
-                                class="hover:text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-lg inline-block poppins-regular">Contact</a>
+                                class="hover:text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-md inline-block poppins-regular">Contact</a>
                         </li>
                     </ul>
                     <div class="absolute bottom-5 flex gap-5 w-full">
@@ -139,16 +178,16 @@
                 <div class="absolute inset-0 w-full h-full">
                     <video
                         class="carousel-video absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-1000"
-                        autoplay muted loop data-index="0" src="assets/video/bg-video.mp4"></video>
+                        autoplay muted loop data-index="0" src="assets/video/software-dev.mp4"></video>
                     <video
                         class="carousel-video absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000"
-                        autoplay muted loop data-index="1" src="assets/video/bg-video-2.mp4"></video>
+                        autoplay muted loop data-index="1" src="assets/video/cloud-solution.mp4"></video>
                     <video
                         class="carousel-video absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000"
-                        autoplay muted loop data-index="2" src="assets/video/bg-video-3.mp4"></video>
+                        autoplay muted loop data-index="2" src="assets/video/it-consulting.mp4"></video>
                     <video
                         class="carousel-video absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000"
-                        autoplay muted loop data-index="3" src="assets/video/bg-video-4.mp4"></video>
+                        autoplay muted loop data-index="3" src="assets/video/mobile-dev.mp4"></video>
                     <!-- <video
                         class="carousel-video absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000"
                         autoplay muted loop data-index="4" src="assets/video/bg-video-5.mp4"></video> -->
@@ -163,22 +202,20 @@
 
             </div>
             <!-- Dark Overlay -->
-            <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50 -z-10"></div>
+            <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50 z-10"></div>
             <div id="content-container"
                 class="hero_section_content transition-all duration-700 relative w-full h-[100dvh] flex flex-col items-center justify-center px-3 z-10">
                 <h1 id="carousel-title"
                     class="text-white text-4xl md:text-6xl poppins-regular text-center mt-32 transition-all duration-500 hover:scale-110">
                     Smart, Scalable, and Secure
-                    <br><span class="text-3xl sm:text-4xl md:text-5xl">IT Services</span>
                 </h1>
                 <p id="carousel-description"
                     class="text-center w-full md:w-3/4 text-white text-lg mt-5 poppins-regular">Discover how our
                     scalable, secure, and innovative IT services can transform your business operations and elevate your
                     customer experience.</p>
-                    <button class="mt-3 md:mt-5"><a href="service.html"
+                <button class="mt-3 md:mt-5"><a href="service.html"
                         class="mt-5 px-12 py-3 font-semibold border-[#f5ae40] bg-[#f5ae40] hover:bg-transparent border-2 text-white inline-block  transition-all duration-300 poppins-regular">Get
                         Start</a></button>
-
             </div>
 
         </section>
