@@ -113,6 +113,75 @@ function closePopup() {
   }, 200);
 }
 
+
+
+
+const videos = document.querySelectorAll(".carousel-video");
+        const contentContainer = document.getElementById("content-container");
+        const titleEl = document.getElementById("carousel-title");
+        const descriptionEl = document.getElementById("carousel-description");
+        const dots = document.querySelectorAll(".carousel-dot");
+
+        const carouselData = [
+            { title: "Welcome to the Future", description: "Experience innovation with Video 1." },
+            { title: "Unleash Creativity", description: "Video 2 highlights creativity and power." },
+            { title: "Adventure Awaits", description: "Explore the unknown with Video 3." },
+            { title: "Breaking Boundaries", description: "Video 4 inspires boldness and exploration." },
+            { title: "Discover the Magic", description: "Step into the extraordinary with Video 5." },
+        ];
+
+        let currentIndex = 0;
+
+        // Function to switch videos and update content
+        function updateCarousel(index) {
+            // Update video visibility
+            videos.forEach((video, i) => {
+                video.classList.toggle("active", i === index);
+            });
+
+            // Update dots
+            dots.forEach((dot, i) => {
+                dot.classList.toggle("active", i === index);
+            });
+
+            // Fade out content
+            contentContainer.classList.remove("active"); // Fade out content
+
+            // Wait for fade-out transition to finish
+            setTimeout(() => {
+                // Update content text
+                titleEl.textContent = carouselData[index].title;
+                descriptionEl.textContent = carouselData[index].description;
+
+                // Fade in updated content
+                contentContainer.classList.add("active"); // Fade in new content
+            }, 500); // This delay should match the fade-out duration (0.5s)
+        }
+
+        // Auto-slide
+        function autoSlide() {
+            currentIndex = (currentIndex + 1) % videos.length;
+            updateCarousel(currentIndex);
+        }
+
+        // Initial setup
+        updateCarousel(currentIndex);
+        let autoSlideInterval = setInterval(autoSlide, 8000); // Change every 8 seconds
+
+        // Add event listeners for manual controls
+        dots.forEach((dot, index) => {
+            dot.addEventListener("click", () => {
+                clearInterval(autoSlideInterval); // Stop auto-slide on manual interaction
+                currentIndex = index;
+                updateCarousel(index);
+                autoSlideInterval = setInterval(autoSlide, 8000); // Restart auto-slide
+            });
+        });
+
+
+
+
+
 // Counter Animation Logic
 const counters = [
   { id: "clients-counter", target: 500 },
