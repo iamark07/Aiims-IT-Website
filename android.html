@@ -36,7 +36,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 
 
-    <title>Aiims Career</title>
+    <title>Android Developer</title>
 </head>
 
 <body>
@@ -55,7 +55,7 @@
             <div class="header_container transition-all duration-300 flex justify-between py-3 w-full">
                 <!-- Logo -->
                 <div class="text-3xl poppins-regular"><a href="index.html"><img src="assets/img/aiims-new-logo.png"
-                            alt="" class="w-32 md:w-44 lg:w-52 transition-all duration-300"></a></div>
+                            alt="" class="w-32 md:w-44 xl:w-52 transition-all duration-300"></a></div>
 
                 <!-- Menu Button (For Mobile) -->
                 <button id="menu-btn" class="lg:hidden text-white focus:outline-none">
@@ -63,23 +63,46 @@
                 </button>
 
                 <!-- Navigation Links -->
-                <nav id="menu" class="hidden lg:flex gap-8 mt-3">
+                <nav id="menu" class="hidden lg:flex gap-8 mt-3 relative">
                     <a href="index.html"
-                        class="hover:text-[#f5ae40] border-b-2 border-transparent h-fit hover:border-[#f5ae40] text-lg inline-block poppins-regular">Home</a>
-                    <a href="about.html"
-                        class="hover:text-[#f5ae40] text-lg border-b-2 border-transparent h-fit hover:border-[#f5ae40] inline-block poppins-regular">About</a>
+                        class="hover:text-[#f5ae40] border-b-2 border-transparent h-fit hover:border-[#f5ae40] text-md xl:text-lg inline-block poppins-regular">Home</a>
+
+                    <!-- Hire Resource with Dropdown -->
+                    <div class="relative group">
+                        <a href=""
+                            class="group-hover:text-[#f59b40] font-semibold text-[#f5ae40] text-md xl:text-lg border-b-2 border-transparent h-fit group-hover:border-[#f5ae40] flex items-center poppins-regular">
+                            Hire Resource <i
+                                class="ri-arrow-down-s-line ms-1 text-[#f5ae40] group-hover:text-[#f5ae40] group-hover:rotate-180"></i>
+                        </a>
+                        <!-- Dropdown Menu -->
+                        <div class="absolute left-0 top-0 hidden group-hover:flex flex-col z-10 pt-10">
+                            <div class="bg-white shadow-lg rounded-sm w-48 overflow-hidden">
+                                <a href="frontend.html"
+                                    class="block px-4 py-3 text-gray-700 hover:bg-[#f5ae40] hover:text-white text-md poppins-regular transition-all duration-300 hover:ps-6 text-nowrap">Frontend
+                                    Developer</a>
+                                <a href="backend.html"
+                                    class="block px-4 py-3 text-gray-700 hover:bg-[#f5ae40] hover:text-white text-md poppins-regular transition-all duration-300 hover:ps-6 text-nowrap">Backend
+                                    Developer</a>
+                                <a href="android.html"
+                                    class="block px-4 py-3 text-gray-700 hover:bg-[#f5ae40] hover:text-white text-md poppins-regular transition-all duration-300 hover:ps-6 text-nowrap">Android
+                                    Developer</a>
+                            </div>
+                        </div>
+                    </div>
+
                     <a href="service.html"
-                        class="hover:text-[#f5ae40] text-lg border-b-2 border-transparent h-fit hover:border-[#f5ae40] inline-block poppins-regular">Services</a>
+                        class="hover:text-[#f5ae40] text-md xl:text-lg border-b-2 border-transparent h-fit hover:border-[#f5ae40] inline-block poppins-regular">Services</a>
                     <a href="interior_design.html"
-                        class="hover:text-[#f5ae40] border-b-2 border-transparent h-fit hover:border-[#f5ae40] text-lg inline-block poppins-regular">Smart
+                        class="hover:text-[#f5ae40] border-b-2 border-transparent h-fit hover:border-[#f5ae40] text-md xl:text-lg inline-block poppins-regular">Smart
                         Interiors</a>
                     <a href="career.html"
-                        class="hover:text-[#f59b40] font-semibold text-[#f5ae40] border-b-2 border-transparent h-fit hover:border-[#f5ae40] text-lg inline-block poppins-regular">Career</a>
+                        class="hover:text-[#f5ae40] border-b-2 border-transparent h-fit hover:border-[#f5ae40] text-md xl:text-lg inline-block poppins-regular">Career</a>
                     <a href="#technology-section"
-                        class="hover:text-[#f5ae40] border-b-2 border-transparent h-fit hover:border-[#f5ae40] text-lg inline-block poppins-regular">Technology</a>
+                        class="hover:text-[#f5ae40] border-b-2 border-transparent h-fit hover:border-[#f5ae40] text-md xl:text-lg inline-block poppins-regular">Technology</a>
                     <a href="contact.html"
-                        class="hover:text-[#f5ae40] border-b-2 border-transparent h-fit hover:border-[#f5ae40] text-lg inline-block poppins-regular">Contact</a>
+                        class="hover:text-[#f5ae40] border-b-2 border-transparent h-fit hover:border-[#f5ae40] text-md xl:text-lg inline-block poppins-regular">Contact</a>
                 </nav>
+
             </div>
 
             <!-- Mobile Menu -->
@@ -91,26 +114,50 @@
                                 alt="" class="w-32"></a></div>
                     <ul class="!mt-10 flex flex-col gap-3">
                         <li><a href="index.html"
-                                class="hover:text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-lg inline-block poppins-regular">Home</a>
+                                class="hover:text-[#f59b40] font-semibold text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-md inline-block poppins-regular">Home</a>
                         </li>
                         <li><a href="about.html"
-                                class="hover:text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-lg inline-block poppins-regular">About</a>
+                                class="hover:text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-md inline-block poppins-regular">About</a>
+                        </li>
+                        <li class="relative group">
+                            <!-- Hire Resource with Dropdown -->
+                            <a id="hire-resource-toggle"
+                                class="group-hover:text-[#f5ae40] hover:border-b-2 group-hover:border-[#f5ae40] border-b-2 border-transparent text-md inline-block poppins-regular cursor-pointer">
+                                Hire Resource <i id="drop-menu-icon"
+                                    class="ri-arrow-down-s-line text-white ms-1 group-hover:text-[#f5ae40]"></i>
+                            </a>
+                            <!-- Dropdown -->
+                            <ul id="hire-resource-dropdown"
+                                class="hidden flex-col mt-2 bg-gray-700 border border-gray-600 rounded-lg shadow-lg">
+                                <li><a href="frontend.html"
+                                        class="block px-4 py-2 text-gray-300 hover:bg-[#f5ae40] hover:text-white text-xs text-nowrap poppins-regular transition-all duration-300 hover:ps-6">Frontend
+                                        Developer</a>
+                                </li>
+                                <li><a href="backend.html"
+                                        class="block px-4 py-2 text-gray-300 hover:bg-[#f5ae40] hover:text-white text-xs text-nowrap poppins-regular transition-all duration-300 hover:ps-6">Backend
+                                        Developer</a>
+                                </li>
+                                <li><a href="android.html"
+                                        class="block px-4 py-2 text-gray-300 hover:bg-[#f5ae40] hover:text-white text-xs text-nowrap poppins-regular transition-all duration-300 hover:ps-6">Android
+                                        Developer</a>
+                                </li>
+                            </ul>
                         </li>
                         <li><a href="service.html"
-                                class="hover:text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-lg inline-block poppins-regular">Services</a>
+                                class="hover:text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-md inline-block poppins-regular">Services</a>
                         </li>
                         <li><a href="interior_design.html"
-                                class="hover:text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-lg inline-block poppins-regular">Smart
+                                class="hover:text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-md inline-block poppins-regular">Smart
                                 Interiors</a>
                         </li>
                         <li><a href="career.html"
-                                class="hover:text-[#f59b40] font-semibold text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-lg poppins-regular">Career</a>
+                                class="hover:text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-md poppins-regular">Career</a>
                         </li>
                         <li><a href="#technology-section"
-                                class="hover:text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-lg poppins-regular">Technology</a>
+                                class="hover:text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-md poppins-regular">Technology</a>
                         </li>
                         <li><a href="contact.html"
-                                class="hover:text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-lg inline-block poppins-regular">Contact</a>
+                                class="hover:text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-md inline-block poppins-regular">Contact</a>
                         </li>
                     </ul>
                     <div class="absolute bottom-5 flex gap-5 w-full">
@@ -130,151 +177,24 @@
         <!-- hero section -->
         <section class="hero_section relative w-full overflow-hidden">
             <!-- hero bg videp -->
-            <video src="assets/video/bg-video-6.mp4" loop autoplay muted
+            <video src="assets/video/bg-video-4.mp4" loop autoplay muted
                 class="-z-10 absolute top-0 left-0 w-full h-[100dvh] object-cover">
             </video>
-            <div class="absolute top-0 left-0 w-full h-full bg-black opacity-30 -z-10"></div>
+            <!-- Dark Overlay -->
+            <div class="absolute top-0 left-0 w-full h-full bg-black opacity-50 -z-10"></div>
             <div
                 class="hero_section_content transition-all duration-700 relative w-full h-[100dvh] flex flex-col items-center justify-center px-3">
                 <h1
                     class="text-white text-4xl md:text-6xl poppins-regular text-center mt-32 transition-all duration-500 hover:scale-110">
-                    A World of Opportunities
-                    <br><span class="text-3xl sm:text-4xl md:text-5xl">Awaits You</span>
+                    Android Developer
+                    <br><span class="text-3xl sm:text-4xl md:text-5xl"></span>
                 </h1>
-                <p class="text-center text-white text-lg mt-5 poppins-regular">Join a team of innovators and visionaries
-                    shaping the future of technology. Your career begins here!</p>
+                <p class="text-center w-full md:w-3/4 text-white text-lg mt-5 poppins-regular">Your gateway to
+                    cutting-edge technology solutions and unparalleled support in the digital era.</p>
             </div>
 
         </section>
 
-
-        <!-- Career Section -->
-        <section class="career-section py-16 px-6 lg:px-20 bg-gray-100">
-            <div class="container mx-auto">
-                <div class="text-center mb-12">
-                    <h1 class="text-4xl font-bold text-gray-800">Open Positions</h1>
-                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">
-                        Explore exciting roles where your skills and creativity can flourish.
-                    </p>
-                </div>
-
-                <!-- Job Cards -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
-                    <!-- Job Card 1 -->
-                    <div
-                        class="group bg-white hover:bg-yellow-500 rounded-lg shadow-lg p-6 hover:scale-105 transition-all duration-300">
-                        <h3
-                            class="text-xl font-semibold text-gray-800 group-hover:text-white transition-all duration-300">
-                            Frontend Developer</h3>
-                        <p class="text-gray-600 mt-2 group-hover:text-white transition-all duration-300">Design and
-                            develop user interfaces.</p>
-                        <p class="text-sm text-gray-500 mt-2 group-hover:text-white transition-all duration-300">Skills:
-                            HTML, CSS, JS, React</p>
-                        <button
-                            class="apply-btn mt-4 px-4 py-2 bg-yellow-500 text-white group-hover:text-yellow-500 rounded-lg group-hover:bg-white transition-all duration-300">
-                            Apply Now
-                        </button>
-                    </div>
-
-                    <!-- Job Card 2 -->
-                    <div
-                        class="group bg-white hover:bg-yellow-500 rounded-lg shadow-lg p-6 hover:scale-105 transition-all duration-300">
-                        <h3
-                            class="text-xl font-semibold text-gray-800 group-hover:text-white transition-all duration-300">
-                            Backend Developer</h3>
-                        <p class="text-gray-600 mt-2 group-hover:text-white transition-all duration-300">Build and
-                            maintain APIs.</p>
-                        <p class="text-sm text-gray-500 mt-2 group-hover:text-white transition-all duration-300">Skills:
-                            Node.js, Express, MongoDB</p>
-                        <button
-                            class="apply-btn mt-4 px-4 py-2 bg-yellow-500 text-white group-hover:text-yellow-500 rounded-lg group-hover:bg-white transition-all duration-300">
-                            Apply Now
-                        </button>
-                    </div>
-
-                    <!-- Job Card 3 -->
-                    <div
-                        class="group bg-white hover:bg-yellow-500 rounded-lg shadow-lg p-6 hover:scale-105 transition-all duration-300">
-                        <h3
-                            class="text-xl font-semibold text-gray-800 group-hover:text-white transition-all duration-300">
-                            UI/UX Designer</h3>
-                        <p class="text-gray-600 mt-2 group-hover:text-white transition-all duration-300">Create
-                            user-friendly designs.</p>
-                        <p class="text-sm text-gray-500 mt-2 group-hover:text-white transition-all duration-300">Skills:
-                            Figma, Adobe XD</p>
-                        <button
-                            class="apply-btn mt-4 px-4 py-2 bg-yellow-500 text-white group-hover:text-yellow-500 rounded-lg group-hover:bg-white transition-all duration-300">
-                            Apply Now
-                        </button>
-                    </div>
-                    <!-- Job Card 4 -->
-                    <div
-                        class="group bg-white hover:bg-[#f5ae40] rounded-lg shadow-lg p-6 hover:scale-105 transition-all duration-300">
-                        <h3
-                            class="text-xl font-semibold text-gray-800 group-hover:text-white transition-all duration-300">
-                            Data Analyst</h3>
-                        <p class="text-gray-600 mt-2 group-hover:text-white transition-all duration-300">Analyze and
-                            interpret complex data sets to drive business decisions.</p>
-                        <p class="text-sm text-gray-500 mt-2 group-hover:text-white transition-all duration-300">Skills:
-                            SQL, Python, Tableau</p>
-                        <button
-                            class="apply-btn mt-4 px-4 py-2 bg-yellow-500 text-white group-hover:text-yellow-500 rounded-lg group-hover:bg-white transition-all duration-300">
-                            Apply Now
-                        </button>
-                    </div>
-                    <!-- Job Card 5 -->
-                    <div
-                        class="group bg-white hover:bg-[#f5ae40] rounded-lg shadow-lg p-6 hover:scale-105 transition-all duration-300">
-                        <h3
-                            class="text-xl font-semibold text-gray-800 group-hover:text-white transition-all duration-300">
-                            Cloud Engineer</h3>
-                        <p class="text-gray-600 mt-2 group-hover:text-white transition-all duration-300">Design and
-                            manage cloud infrastructure for scalable applications.</p>
-                        <p class="text-sm text-gray-500 mt-2 group-hover:text-white transition-all duration-300">Skills:
-                            AWS, Azure, Kubernetes</p>
-                        <button
-                            class="apply-btn mt-4 px-4 py-2 bg-yellow-500 text-white group-hover:text-yellow-500 rounded-lg group-hover:bg-white transition-all duration-300">
-                            Apply Now
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Popup Modal -->
-        <div id="job-popup" class="hidden fixed inset-0 bg-black bg-opacity-50 justify-center items-center z-50">
-            <div class="bg-white rounded-lg shadow-lg w-[90%] md:w-1/2 p-6 relative">
-                <button id="close-popup"
-                    class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl">&times;</button>
-                <h2 class="text-2xl font-bold text-gray-800 mb-4">Submit Your Application</h2>
-                <form class="space-y-4">
-                    <div>
-                        <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
-                        <input type="text" id="name" name="name" required
-                            class="mt-1 block w-full border-gray-700 rounded-md shadow-sm focus:ring-yellow-500 focus:border-yellow-500 p-2 border">
-                    </div>
-                    <div>
-                        <label for="role" class="block text-sm font-medium text-gray-700">Role</label>
-                        <input type="text" id="role" name="role" required
-                            class="mt-1 block w-full border-gray-700 rounded-md shadow-sm focus:ring-yellow-500 focus:border-yellow-500 p-2 border">
-                    </div>
-                    <div>
-                        <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
-                        <input type="email" id="email" name="email" required
-                            class="mt-1 block w-full border-gray-700 rounded-md shadow-sm focus:ring-yellow-500 focus:border-yellow-500 p-2 border">
-                    </div>
-                    <div>
-                        <label for="resume" class="block text-sm font-medium text-gray-700">Upload Resume</label>
-                        <input type="file" id="resume" name="resume" required
-                            class="mt-1 block w-full border-gray-700 rounded-md shadow-sm focus:ring-yellow-500 focus:border-yellow-500 p-2 border">
-                    </div>
-                    <button type="submit"
-                        class="w-full bg-yellow-500 text-white py-2 px-4 rounded-md hover:bg-yellow-600 transition duration-300">
-                        Submit Application
-                    </button>
-                </form>
-            </div>
-        </div>
 
         <!-- footer section -->
         <footer class="bg-gray-800 text-white pt-10 pb-5 px-5 lg:px-10 overflow-hidden">
@@ -307,7 +227,7 @@
                             </li>
                             <li><a href="contact.html"
                                     class="text-gray-400 hover:text-white poppins-regular">Contact</a></li>
-                            <li><a href="index.html#technology-section"
+                            <li><a href="#technology-section"
                                     class="text-gray-400 hover:text-white poppins-regular">Technology</a></li>
                         </ul>
                     </div>
@@ -419,35 +339,6 @@
 
             }
         });
-
-
-        // DOM Elements
-        const career_applyButtons = document.querySelectorAll('.apply-btn');
-        const career_popup = document.getElementById('job-popup');
-        const career_closePopupButton = document.getElementById('close-popup');
-
-        // Open Popup
-        career_applyButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                career_popup.classList.remove('hidden');
-                career_popup.classList.add('flex');
-            });
-        });
-
-        // Close Popup
-        career_closePopupButton.addEventListener('click', () => {
-            career_popup.classList.add('hidden');
-            career_popup.classList.remove('flex');
-        });
-
-        // Close popup when clicking outside of the modal
-        career_popup.addEventListener('click', (event) => {
-            if (event.target === career_popup) {
-                career_popup.classList.add('hidden');
-                career_popup.classList.remove('flex');
-            }
-        });
-
     </script>
 </body>
 
