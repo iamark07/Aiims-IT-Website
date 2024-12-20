@@ -49,11 +49,12 @@
         </div>
 
         <!-- Header Section -->
-        <header class="fixed top-0 left-0 z-40 transition-all duration-300 bg-none text-white py-3 px-5 xl:pe-20 lg:pe-10 w-full">
+        <header
+            class="fixed top-0 left-0 z-40 transition-all duration-300 bg-none text-white py-3 px-5 xl:pe-20 lg:pe-10 w-full">
             <div class="header_container transition-all duration-300 flex justify-between py-3 w-full">
                 <!-- Logo -->
                 <div class="text-3xl poppins-regular"><a href="index.html"><img src="assets/img/aiims-new-logo.png"
-                            alt="" class="w-32 md:w-44 lg:w-52 transition-all duration-300"></a></div>
+                            alt="" class="w-32 md:w-44 xl:w-52 transition-all duration-300"></a></div>
 
                 <!-- Menu Button (For Mobile) -->
                 <button id="menu-btn" class="lg:hidden text-white focus:outline-none">
@@ -61,16 +62,44 @@
                 </button>
 
                 <!-- Navigation Links -->
-                <nav id="menu" class="hidden lg:flex gap-8 mt-3">
+                <nav id="menu" class="hidden lg:flex gap-8 mt-3 relative">
                     <a href="index.html"
-                        class="hover:text-[#f5ae40] border-b-2 border-transparent h-fit hover:border-[#f5ae40] text-lg inline-block poppins-regular">Home</a>
-                    <a href="about.html" class="hover:text-[#f5ae40] text-lg border-b-2 border-transparent h-fit hover:border-[#f5ae40] inline-block poppins-regular">About</a>
-                    <a href="service.html" class="hover:text-[#f5ae40] text-lg border-b-2 border-transparent h-fit hover:border-[#f5ae40] inline-block poppins-regular">Services</a>
-                    <a href="interior_design.html" class="hover:text-[#f5ae40] border-b-2 border-transparent h-fit hover:border-[#f5ae40] text-lg inline-block poppins-regular">Smart Interiors</a>
-                    <a href="career.html" class="hover:text-[#f5ae40] border-b-2 border-transparent h-fit hover:border-[#f5ae40] text-lg inline-block poppins-regular">Career</a>
-                    <a href="index.html#technology-section" class="hover:text-[#f5ae40] border-b-2 border-transparent h-fit hover:border-[#f5ae40] text-lg inline-block poppins-regular">Technology</a>
-                    <a href="contact.html" class="hover:text-[#f59b40] font-semibold text-[#f5ae40] border-b-2 border-transparent h-fit hover:border-[#f5ae40] text-lg inline-block poppins-regular">Contact</a>
+                        class="hover:text-[#f5ae40] border-b-2 border-transparent h-fit hover:border-[#f5ae40] text-md xl:text-lg inline-block poppins-regular">Home</a>
+
+                    <!-- Hire Resource with Dropdown -->
+                    <div class="relative group">
+                        <a href=""
+                            class="group-hover:text-[#f5ae40] text-md xl:text-lg border-b-2 border-transparent h-fit group-hover:border-[#f5ae40] flex items-center poppins-regular">
+                            Hire Resource <i
+                                class="ri-arrow-down-s-line text-white ms-1 group-hover:text-[#f5ae40] group-hover:rotate-180"></i>
+                        </a>
+                        <!-- Dropdown Menu -->
+                        <div
+                            class="absolute left-0 top-0 hidden group-hover:flex flex-col z-10 pt-10">
+                            <div class="bg-white shadow-lg rounded-sm w-48 overflow-hidden">
+                            <a href="frontend.html"
+                                class="block px-4 py-3 text-gray-700 hover:bg-[#f5ae40] hover:text-white text-md poppins-regular transition-all duration-300 hover:ps-6 text-nowrap">Frontend Developer</a>
+                            <a href="backend.html"
+                                class="block px-4 py-3 text-gray-700 hover:bg-[#f5ae40] hover:text-white text-md poppins-regular transition-all duration-300 hover:ps-6 text-nowrap">Backend Developer</a>
+                            <a href="android.html"
+                                class="block px-4 py-3 text-gray-700 hover:bg-[#f5ae40] hover:text-white text-md poppins-regular transition-all duration-300 hover:ps-6 text-nowrap">Android Developer</a>
+                                </div>
+                        </div>
+                    </div>
+
+                    <a href="service.html"
+                        class="hover:text-[#f59b40] font-semibold text-[#f5ae40] text-md xl:text-lg border-b-2 border-transparent h-fit hover:border-[#f5ae40] inline-block poppins-regular">Services</a>
+                    <a href="interior_design.html"
+                        class="hover:text-[#f5ae40] border-b-2 border-transparent h-fit hover:border-[#f5ae40] text-md xl:text-lg inline-block poppins-regular">Smart
+                        Interiors</a>
+                    <a href="career.html"
+                        class="hover:text-[#f5ae40] border-b-2 border-transparent h-fit hover:border-[#f5ae40] text-md xl:text-lg inline-block poppins-regular">Career</a>
+                    <a href="#technology-section"
+                        class="hover:text-[#f5ae40] border-b-2 border-transparent h-fit hover:border-[#f5ae40] text-md xl:text-lg inline-block poppins-regular">Technology</a>
+                    <a href="contact.html"
+                        class="hover:text-[#f5ae40] border-b-2 border-transparent h-fit hover:border-[#f5ae40] text-md xl:text-lg inline-block poppins-regular">Contact</a>
                 </nav>
+
             </div>
 
             <!-- Mobile Menu -->
@@ -82,30 +111,55 @@
                                 alt="" class="w-32"></a></div>
                     <ul class="!mt-10 flex flex-col gap-3">
                         <li><a href="index.html"
-                                class="hover:text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-lg inline-block poppins-regular">Home</a>
+                                class="hover:text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-md inline-block poppins-regular">Home</a>
                         </li>
-                        <li><a href="about.html" class="hover:text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-lg inline-block poppins-regular">About</a>
+                        <li><a href="about.html"
+                                class="hover:text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-md inline-block poppins-regular">About</a>
+                        </li>
+                        <li class="relative group">
+                            <!-- Hire Resource with Dropdown -->
+                            <a id="hire-resource-toggle"
+                                class="group-hover:text-[#f5ae40] hover:border-b-2 group-hover:border-[#f5ae40] border-b-2 border-transparent text-md inline-block poppins-regular cursor-pointer">
+                                Hire Resource <i id="drop-menu-icon" class="ri-arrow-down-s-line text-white ms-1 group-hover:text-[#f5ae40]"></i>
+                            </a>
+                            <!-- Dropdown -->
+                            <ul id="hire-resource-dropdown"
+                                class="hidden flex-col mt-2 bg-gray-700 border border-gray-600 rounded-lg shadow-lg">
+                                <li><a href="frontend.html"
+                                        class="block px-4 py-2 text-gray-300 hover:bg-[#f5ae40] hover:text-white text-xs text-nowrap poppins-regular transition-all duration-300 hover:ps-6">Frontend Developer</a>
+                                </li>
+                                <li><a href="backend.html"
+                                        class="block px-4 py-2 text-gray-300 hover:bg-[#f5ae40] hover:text-white text-xs text-nowrap poppins-regular transition-all duration-300 hover:ps-6">Backend Developer</a>
+                                </li>
+                                <li><a href="android.html"
+                                        class="block px-4 py-2 text-gray-300 hover:bg-[#f5ae40] hover:text-white text-xs text-nowrap poppins-regular transition-all duration-300 hover:ps-6">Android Developer</a>
+                                </li>
+                            </ul>
                         </li>
                         <li><a href="service.html"
-                                class="hover:text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-lg inline-block poppins-regular">Services</a>
+                                class="hover:text-[#f59b40] font-semibold text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-md inline-block poppins-regular">Services</a>
                         </li>
-                        <li><a href="interior_design.html" class="hover:text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-lg inline-block poppins-regular">Smart Interiors</a>
+                        <li><a href="interior_design.html"
+                                class="hover:text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-md inline-block poppins-regular">Smart
+                                Interiors</a>
                         </li>
                         <li><a href="career.html"
-                                class="hover:text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-lg poppins-regular">Career</a></li>
-                        <li><a href="index.html#technology-section"
-                                class="hover:text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-lg poppins-regular">Technology</a></li>
-                        <li><a href="contact.html" class="hover:text-[#f59b40] font-semibold text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-lg inline-block poppins-regular">Contact</a>
+                                class="hover:text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-md poppins-regular">Career</a>
+                        </li>
+                        <li><a href="#technology-section"
+                                class="hover:text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-md poppins-regular">Technology</a>
+                        </li>
+                        <li><a href="contact.html"
+                                class="hover:text-[#f5ae40] hover:border-b-2 hover:border-[#f5ae40] border-b-2 border-transparent text-md inline-block poppins-regular">Contact</a>
                         </li>
                     </ul>
                     <div class="absolute bottom-5 flex gap-5 w-full">
-                        <a href="https://www.linkedin.com/company/application-integration-and-intelligent-monitoring-system/?viewAsMember=true" target="_blank"
-                            class="inline-block hover:text-gray-300"><i
+                        <a href="https://www.linkedin.com/company/application-integration-and-intelligent-monitoring-system/?viewAsMember=true"
+                            target="_blank" class="inline-block hover:text-gray-300"><i
                                 class="ri-linkedin-box-fill text-4xl"></i>
                         </a>
                         <a href="https://wa.me/8505889198?text=Hello, I would like to inquire about..." target="_blank"
-                            class="inline-block hover:text-gray-300"><i
-                                class="ri-whatsapp-line text-4xl"></i>
+                            class="inline-block hover:text-gray-300"><i class="ri-whatsapp-line text-4xl"></i>
                         </a>
                     </div>
                 </nav>
