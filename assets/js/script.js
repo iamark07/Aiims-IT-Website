@@ -35,8 +35,8 @@ const handleScroll = () => {
     // Add the bg-gray-800 class to the header
     header.classList.add("bg-gray-800");
     // Add lg:w-44 to the logo image
-    logoContainer.querySelector("img").classList.add("xl:w-36");
-    logoContainer.querySelector("img").classList.remove("xl:w-52");
+    logoContainer.querySelector("img").classList.add("xl:w-24");
+    logoContainer.querySelector("img").classList.remove("xl:w-28");
     // Add items-center to the flex container
     header_menu.classList.remove("mt-3");
     header_container.classList.add("items-center");
@@ -45,8 +45,8 @@ const handleScroll = () => {
     // Remove the bg-gray-800 class from the header
     header.classList.remove("bg-gray-800");
     // Remove lg:w-44 from the logo image
-    logoContainer.querySelector("img").classList.add("xl:w-52");
-    logoContainer.querySelector("img").classList.remove("xl:w-36");
+    logoContainer.querySelector("img").classList.add("xl:w-28");
+    logoContainer.querySelector("img").classList.remove("xl:w-24");
     // Remove items-center from the flex container
     flexContainer.classList.remove("items-center");
   }
