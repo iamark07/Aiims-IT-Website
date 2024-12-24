@@ -142,7 +142,7 @@ window.onload = function () {
 
   const carouselData = [
     {
-      title: "SoftWare Development",
+      title: "Software Development",
       description:
         "Build custom software solutions tailored to your unique business needs.",
     },
