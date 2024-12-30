@@ -47,8 +47,6 @@ const handleScroll = () => {
     // Remove lg:w-44 from the logo image
     logoContainer.querySelector("img").classList.add("xl:w-28");
     logoContainer.querySelector("img").classList.remove("xl:w-24");
-    // Remove items-center from the flex container
-    flexContainer.classList.remove("items-center");
   }
 };
 
